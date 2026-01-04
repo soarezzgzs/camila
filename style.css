@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  border-bottom: 1px solid #1f29373a;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px #1f2937;
+  background-color: white;
+}
+
+body {
+  font-style: "Roboto" bold;
+}
+
+nav {
+  display: inline-block;
+  align-items: center;
+  font-style: "Roboto" bold;
+  width: 100%;
+  background-color: white;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+#cr {
+  border-radius: 6px;
+  padding: 3px;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  background-color: #7c2d37;
+  cursor: auto;
+  font-style: bold;
+}
+
+#contabilidade {
+  color: #1f2937;
+  cursor: auto;
+  font-style: bold;
+}
+
+#parteDireita {
+  color: #1f2937;
+  font-size: 8pt;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#orcamento {
+  background-color: #7c2d37;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 8pt;
+  cursor: pointer;
+}
+
+.divSuprema {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  width: 100%;
+  display: inline-block;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+#sobre {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#servicos {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contato {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#solicitar {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.esquerda {
+  margin-left: 50px;
+}
+
+.direita {
+  margin-right: 50px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+.imagem {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #1f2937;
+}
