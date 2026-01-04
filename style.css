@@ -25,6 +25,8 @@ header {
   box-shadow: 0 0 10px #1f2937;
   background-color: white;
   font-family: 'Roboto' bold;
+  z-index: 10000;
+
 
 }
 
@@ -38,11 +40,15 @@ nav {
   font-style: "Roboto" bold;
   width: 100%;
   background-color: white;
+  z-index: 10000;
 }
 
 li {
   display: inline-block;
   list-style: none;
+  padding: 10px;
+  z-index: 10000;
+
 }
 
 #cr {
@@ -54,28 +60,42 @@ li {
   background-color: #7c2d37;
   cursor: auto;
   font-style: bold;
+  z-index: 10000;
+
 }
 
 #contabilidade {
   color: #1f2937;
   cursor: auto;
   font-style: bold;
+  z-index: 10000;
+
 }
 
 #parteDireita {
   color: #1f2937;
-  font-size: 8pt;
+  font-size: 12pt;
   margin-right: 20px;
   cursor: pointer;
+  z-index: 10000;
+
 }
 
 #orcamento {
   background-color: #7c2d37;
   color: white;
   border-radius: 20px;
-  padding: 5px;
-  font-size: 8pt;
+  padding: 8px;
+  font-size: 12pt;
   cursor: pointer;
+  z-index: 10000;
+
+}
+
+#orcamento:hover{
+ background-color: rgba(124, 45, 55, 0.8);
+  z-index: 10000;
+
 }
 
 .divSuprema {
@@ -110,6 +130,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f9fafb;
 }
 
 #contato {
@@ -177,6 +198,11 @@ height: 500px;
     width: 60px;
 }
 
+.faleConosco:hover{
+ background-color: rgba(124, 45, 55, 0.8);
+
+}
+
 .conhecaServicos{
     margin-left: 5px;
     height: 10px;
@@ -185,6 +211,12 @@ height: 500px;
     border-radius: 30px;
     padding: 10px 20px;
     width: 60px;
+}
+
+.conhecaServicos:hover{
+ background-color:  #f9fafb;
+  color: rgba(124, 45, 55, 0.8);
+
 }
 
 #sobre{
@@ -308,9 +340,9 @@ border-radius: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
     color: #7c2d37;
+    font-size: 15pt;
     
 }
-
 
 .missao{
     margin-left: 30px;
@@ -325,8 +357,9 @@ border-radius: 15px;
 }
 
 .card1:hover{
-    box-shadow:  3px 3px 3px rgba(107, 114, 128, 0.3) ;
-    transition: 0.1s ease;
+    transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
 .card2{
@@ -350,6 +383,8 @@ border-radius: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
     color: #7c2d37;
+    font-size: 15pt;
+
     
 }
 
@@ -367,8 +402,9 @@ border-radius: 15px;
 }
 
 .card2:hover{
-    box-shadow:  3px 3px 3px rgba(107, 114, 128, 0.3) ;
-    transition: 0.1s ease;
+  transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
 .card3{
@@ -392,6 +428,7 @@ border-radius: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
     color: #7c2d37;
+    font-size: 15pt;
     
 }
 
@@ -409,6 +446,325 @@ border-radius: 15px;
 }
 
 .card3:hover{
-    box-shadow:  3px 3px 3px rgba(107, 114, 128, 0.3) ;
-    transition: 0.1s ease;
+   transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+}
+
+#servicos{
+    display: inline-block;
+    align-items: normal;
+    width: 100%;
+    height: 160vh;
+
+}
+
+.servicosh1{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.servicosp{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #6b7280;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerServicos{ /* aaa */
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 280px;
+
+}
+
+
+.card1Servicos{
+    width: 400px;
+    height: 250px;
+    margin-left: 50px;
+    border-radius: 15px;
+    border: 1px solid #1f29373a;
+    background-color: white;
+}
+
+#document{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: 30px;
+    background-color: rgba(124, 45, 55, 0.1);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #7c2d37;
+    font-size: 15pt;
+    
+}
+
+.missao{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.missao2{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card1Servicos:hover{
+   transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+}
+
+.card2Servicos{
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 1px solid #1f29373a;
+    background-color: white;
+    
+}
+
+#calculator{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: 30px;
+    background-color: rgba(124, 45, 55, 0.1);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #7c2d37;
+    font-size: 15pt;
+
+    
+}
+
+
+.valores{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.valores2{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card2Servicos:hover{
+   transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+}
+
+.card3Servicos{
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 1px solid #1f29373a;
+    background-color: white;
+    
+}
+
+#graphic{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: 30px;
+    background-color: rgba(124, 45, 55, 0.1);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #7c2d37;
+    font-size: 15pt;
+    
+}
+
+
+.valores{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.valores2{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card3Servicos:hover{
+   transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+}
+
+.containerServicos2{ /* aaa */
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+
+
+.card1Servicos1{
+    width: 400px;
+    height: 250px;
+    margin-left: 50px;
+    border-radius: 15px;
+    border: 1px solid #1f29373a;
+    background-color: white;
+    
+}
+
+#people{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: 30px;
+    background-color: rgba(124, 45, 55, 0.1);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #7c2d37;
+    font-size: 15pt;
+    
+}
+
+.missao{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.missao2{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card1Servicos1:hover{
+    transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+}
+
+.card2Servicos2{
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 1px solid #1f29373a;
+    background-color: white;
+    
+}
+
+#check{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: 30px;
+    background-color: rgba(124, 45, 55, 0.1);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #7c2d37;
+    font-size: 15pt;
+
+    
+}
+
+
+.valores{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.valores2{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card2Servicos2:hover{
+    transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+}
+
+.card3Servicos3{
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 1px solid #1f29373a;
+    background-color: white;
+    
+}
+
+#dollar{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: 30px;
+    background-color: rgba(124, 45, 55, 0.1);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #7c2d37;
+    font-size: 15pt;
+    
+}
+
+
+.valores{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.valores2{
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.card3Servicos3:hover{
+  transform: scale(105%);
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
