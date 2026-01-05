@@ -16,18 +16,15 @@ html {
 
 header {
   border-bottom: 1px solid #1f29373a;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  box-shadow: 0 0 10px #1f2937;
   background-color: white;
   font-family: 'Roboto' bold;
   z-index: 10000;
-
-
 }
 
 body {
@@ -41,6 +38,8 @@ nav {
   width: 100%;
   background-color: white;
   z-index: 10000;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 li {
@@ -61,6 +60,7 @@ li {
   cursor: auto;
   font-style: bold;
   z-index: 10000;
+  font-size: 18pt;
 
 }
 
@@ -69,16 +69,20 @@ li {
   cursor: auto;
   font-style: bold;
   z-index: 10000;
-
+  font-size: 18pt;
+ 
 }
 
 #parteDireita {
   color: #1f2937;
   font-size: 12pt;
   margin-right: 20px;
-  cursor: pointer;
+  cursor: normal;
   z-index: 10000;
+}
 
+#parteDireita:hover{
+    color: #7c2d37;
 }
 
 #orcamento {
@@ -111,36 +115,25 @@ ul {
 }
 
 #home {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
+  background-color: #f5f5f5 ;
 }
 
-#sobre {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 #servicos {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9fafb;
+  background-color: #f5f5f5 ;
 }
 
 #contato {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#solicitar {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -157,16 +150,19 @@ ul {
 
 .home {
 display: flex;
-background-color: #f9fafb ;
+justify-content: center;
+align-items: center;
+background-color: #f5f5f5  ;
 height: 500px;
+margin-left: 100px;
+margin-right: 100px;
 }
 
 .home2h1{
     margin-left: 50px;
-    font-size: 40pt;
-    margin-top: 30px;
-    margin-right: 30px;
+    font-size: 55pt;
     color: #1f2937 ;
+    margin-bottom: 50px;
 }
 
 .home2p{
@@ -175,17 +171,17 @@ height: 500px;
     margin-top: 30px;
     margin-right: 30px;
     opacity: 80%;
-    color: #6b7280 ;
-    margin-bottom: 30px;
+    color: rgb(107, 114, 128) ;
+    margin-bottom: 50px;
 }
 
 .imagem {
-  width: 600px;
-  height: 400px;
+  width: 1000px;
+  height: 500px;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px #1f2937;
+  box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
   justify-content: end;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 .faleConosco{
@@ -194,7 +190,7 @@ height: 500px;
     background-color: #7c2d37;
     color: white;
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     width: 60px;
 }
 
@@ -209,7 +205,7 @@ height: 500px;
     border: 1px solid #7c2d37;
     color: #7c2d37;
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     width: 60px;
 }
 
@@ -222,9 +218,10 @@ height: 500px;
 #sobre{
     display: inline-block;
     align-items: normal;
-    width: 100%;
-    height: 160vh;
-
+    width: 90%;
+    height: 130vh;
+    margin-left: 100px;
+   margin-right: 100px;
 }
 
 .sobreh1{
@@ -234,6 +231,7 @@ height: 500px;
     justify-content: center;
     align-items: center;
     color: #1f2937;
+    font-size: 40pt;
 }
 
 .sobrep1{
@@ -246,6 +244,7 @@ height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15pt;
 
 }
 
@@ -256,6 +255,7 @@ height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15pt;
 
 
 }
@@ -268,6 +268,8 @@ height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15pt;
+
 }
 
 .experiencia{
@@ -275,44 +277,54 @@ height: 500px;
     margin-top: 100px;
     align-items: center;
     justify-content: center;
+    margin-left: 150px;
 }
 
 .experiencia2{
     display: inline-block;
-width: 100%;
+    width: fit-content;
+    margin-right: 110px;
 }
 
 .experiencia h2{
     margin-left: 50px;
-    width: 600px;
+    width: 500px;
     margin-bottom: 15px;
     color: #1f2937;
+    font-size: 20pt;
+    margin-left: 200px;
+
 }
 
 .experiencia p{
-    width: 600px;
+    width: 700px;
     margin-left: 50px;
     margin-bottom: 15px;
     color: #6b7280;
+    font-size: 15pt;
+    margin-left: 200px;
 }
 
 .imgExperiencia{
-    width: 600px;
-    height: 300px;
-display: inline-block;
-margin-right: 50px;
-border-radius: 15px;
+  width: 810px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
+  justify-content: end;
+  margin-right: 300px;
+
 }
 
 .container2{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .container{
     display: flex;
-    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 500px;
 
@@ -320,12 +332,12 @@ border-radius: 15px;
 
 
 .card1{
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
     margin-left: 50px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
-    
+    margin-bottom: 100px;
 }
 
 #target{
@@ -357,17 +369,16 @@ border-radius: 15px;
 }
 
 .card1:hover{
-    transform: scale(105%);
   transition: 0.5s ease;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
 .card2{
-    width: 400px;
-    height: 250px;
-    margin-left: 20px;
+    width: 450px;
+    height: 300px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
+    margin-bottom: 100px;
     
 }
 
@@ -388,31 +399,17 @@ border-radius: 15px;
     
 }
 
-
-.valores{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.valores2{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .card2:hover{
-  transform: scale(105%);
   transition: 0.5s ease;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
 .card3{
-    width: 400px;
-    height: 250px;
-    margin-left: 20px;
+    width: 450px;
+    height: 300px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
+    margin-bottom: 100px;
     
 }
 
@@ -433,20 +430,7 @@ border-radius: 15px;
 }
 
 
-.valores{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.valores2{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .card3:hover{
-   transform: scale(105%);
   transition: 0.5s ease;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
@@ -455,7 +439,7 @@ border-radius: 15px;
     display: inline-block;
     align-items: normal;
     width: 100%;
-    height: 160vh;
+    height: 110vh;
 
 }
 
@@ -467,6 +451,8 @@ border-radius: 15px;
     align-items: center;
     color: #1f2937;
     margin-bottom: 10px;
+    font-size: 40pt;
+    
 }
 
 .servicosp{
@@ -484,6 +470,8 @@ border-radius: 15px;
 
 .containerServicos{ /* aaa */
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
     width: 100%;
     height: 280px;
@@ -492,9 +480,9 @@ border-radius: 15px;
 
 
 .card1Servicos{
-    width: 400px;
-    height: 250px;
-    margin-left: 50px;
+    width: 450px;
+    height: 300px;
+    margin-left: 150px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
     background-color: white;
@@ -534,10 +522,15 @@ border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
+.card1Servicos:hover #document{
+    background-color: #7c2d37;
+    color: white;
+    transition: 0.5s ease;
+}
+
 .card2Servicos{
-    width: 400px;
-    height: 250px;
-    margin-left: 20px;
+    width: 450px;
+    height: 300px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
     background-color: white;
@@ -551,6 +544,7 @@ border-radius: 15px;
     justify-content: center;
     height: 40px;
     margin-left: 30px;
+    margin-right: 30px;
     background-color: rgba(124, 45, 55, 0.1);
     border-radius: 50%;
     margin-top: 30px;
@@ -562,28 +556,22 @@ border-radius: 15px;
 }
 
 
-.valores{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.valores2{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .card2Servicos:hover{
    transform: scale(105%);
   transition: 0.5s ease;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
+.card2Servicos:hover #calculator{
+    background-color: #7c2d37;
+    color: white;
+    transition: 0.5s ease;
+}
+
 .card3Servicos{
-    width: 400px;
-    height: 250px;
-    margin-left: 20px;
+    width: 450px;
+    height: 300px;
+    margin-right: 90px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
     background-color: white;
@@ -603,21 +591,12 @@ border-radius: 15px;
     margin-bottom: 30px;
     color: #7c2d37;
     font-size: 15pt;
+    margin-right: 30px;
     
 }
 
 
-.valores{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
-.valores2{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
 .card3Servicos:hover{
    transform: scale(105%);
@@ -625,18 +604,27 @@ border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
+.card3Servicos:hover #graphic{
+    background-color: #7c2d37;
+    color: white;
+    transition: 0.5s ease;
+}
+
+
 .containerServicos2{ /* aaa */
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 500px;
-
+    height: 280px;
 }
 
 
 .card1Servicos1{
-    width: 400px;
-    height: 250px;
-    margin-left: 50px;
+    width: 450px;
+    height: 300px;
+    margin-left: 150px;
+    margin-top: 100px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
     background-color: white;
@@ -656,6 +644,7 @@ border-radius: 15px;
     margin-bottom: 30px;
     color: #7c2d37;
     font-size: 15pt;
+    margin-right: 30px;
     
 }
 
@@ -663,12 +652,16 @@ border-radius: 15px;
     margin-left: 30px;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 30px;
+
 }
 
 .missao2{
     margin-left: 30px;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 30px;
+
 }
 
 .card1Servicos1:hover{
@@ -677,9 +670,16 @@ border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
+.card1Servicos1:hover #people{
+    background-color: #7c2d37;
+    color: white;
+    transition: 0.5s ease;
+}
+
 .card2Servicos2{
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
+    margin-top: 100px;
     margin-left: 20px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
@@ -700,22 +700,12 @@ border-radius: 15px;
     margin-bottom: 30px;
     color: #7c2d37;
     font-size: 15pt;
+    margin-right: 30px;
 
     
 }
 
 
-.valores{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.valores2{
-    margin-left: 30px;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
 .card2Servicos2:hover{
     transform: scale(105%);
@@ -723,10 +713,18 @@ border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
 }
 
+.card2Servicos2:hover #check{
+    background-color: #7c2d37;
+    color: white;
+    transition: 0.5s ease;
+}
+
 .card3Servicos3{
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
+    margin-top: 100px;
     margin-left: 20px;
+    margin-right: 90px;
     border-radius: 15px;
     border: 1px solid #1f29373a;
     background-color: white;
@@ -746,6 +744,7 @@ border-radius: 15px;
     margin-bottom: 30px;
     color: #7c2d37;
     font-size: 15pt;
+    margin-right: 30px;
     
 }
 
@@ -754,12 +753,16 @@ border-radius: 15px;
     margin-left: 30px;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 30px;
+
 }
 
 .valores2{
     margin-left: 30px;
     align-items: center;
     margin-bottom: 20px;
+    margin-right: 30px;
+
 }
 
 
@@ -767,4 +770,143 @@ border-radius: 15px;
   transform: scale(105%);
   transition: 0.5s ease;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+}
+
+
+.card3Servicos3:hover #dollar{
+    background-color: #7c2d37;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.entreContato{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80vh;
+    height: 100px;
+
+}
+
+.entreContatop{
+    margin-bottom: 20px;
+    display: flex;
+    color: #6b7280;
+    font-size: 12pt;
+}
+
+.entreContato2{
+    width: 300px;
+    margin-left: 60px;
+}
+
+.entreContatoa{
+  background-color: #7c2d37;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+  padding: 8px;
+  margin-top: 20px;
+}
+
+.contatoGeral{
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+
+}
+
+.contato1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contatoh1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    font-size: 40pt;
+    color: #1f2937;
+
+
+}
+
+.contatop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+
+}
+
+.cards{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cardEsquerda{
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    margin-left: 150px;
+}
+
+.cardEsquerda h2{
+    padding: 40px 30px;
+    font-weight: 300;
+}
+
+#labelNome{
+    display: flex;
+    width: fit-content;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+#inputNome{
+    margin-left: 30px;
+    border-radius: 10px;
+    height: 40px;
+    padding: 10px;
+    width: 80%;
+}
+
+#inputMensagem{
+    margin-left: 30px;
+    border-radius: 10px;
+    height: 150px;
+    padding: 10px;
+    width: 80%;
+}
+
+
+
+.cardDireita{
+    border: 1px solid red;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+
+}
+.cardDireitaBaixo{
+    border: 1px solid red;
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+
+}
+
+.cardsDaDireita{
+    margin-left: 50px;
 }
