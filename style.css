@@ -1093,30 +1093,43 @@ ul {
   z-index: 1000;
 }
 
-/* =========================
-   MOBILE FIRST FIX
-========================= */
 @media (max-width: 768px) {
+  /* =========================
+     BASE GLOBAL
+  ========================= */
   body {
     overflow-x: hidden;
+    padding-top: 70px;
   }
 
-  /* Textos */
-  h1 {
-    font-size: clamp(24px, 6vw, 36px);
-    text-align: center;
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
-  h2 {
-    font-size: clamp(18px, 5vw, 26px);
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
-  p {
-    font-size: 14px;
-    text-align: center;
+  /* =========================
+     HEADER
+  ========================= */
+  .direita {
+    display: none;
   }
 
-  /* HOME */
+  .divSuprema {
+    justify-content: center;
+  }
+
+  .esquerda {
+    margin: 0;
+  }
+
+  /* =========================
+     HOME
+  ========================= */
   .home {
     flex-direction: column;
     height: auto;
@@ -1124,31 +1137,53 @@ ul {
     text-align: center;
   }
 
-  .home2h1,
+  .home2h1 {
+    font-size: clamp(26px, 7vw, 34px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
   .home2p {
-    margin-left: 0;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0 10px;
   }
 
   .imagem {
     width: 100%;
     height: auto;
-    margin: 30px 0 0 0;
+    margin-top: 20px;
+    border-radius: 8px;
   }
 
   /* BOTÕES */
   .faleConosco,
   .conhecaServicos {
-    display: inline-block;
+    display: block;
     width: 100%;
     max-width: 300px;
     margin: 10px auto;
   }
 
-  /* SOBRE */
+  /* =========================
+     SOBRE
+  ========================= */
   #sobre {
     width: 100%;
     height: auto;
     margin: 0;
+  }
+
+  .sobreh1 {
+    font-size: clamp(26px, 6vw, 32px);
+    text-align: center;
+  }
+
+  .sobre p {
+    font-size: 14px;
+    padding: 0 12px;
+    text-align: center;
   }
 
   .experiencia {
@@ -1166,10 +1201,22 @@ ul {
   .imgExperiencia {
     width: 100%;
     height: auto;
-    margin: 0;
+    margin: 20px 0;
   }
 
-  /* CARDS GERAIS */
+  /* =========================
+     CARDS / SERVIÇOS
+  ========================= */
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cards {
+    flex-direction: column;
+    height: auto;
+    overflow-x: hidden;
+  }
+
   .card1,
   .card2,
   .card3,
@@ -1178,35 +1225,28 @@ ul {
   .card3Servicos,
   .card1Servicos1,
   .card2Servicos2,
-  .card3Servicos3 {
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  /* SERVIÇOS */
-  .containerServicos,
-  .containerServicos2 {
-    flex-direction: column;
-    height: auto;
-  }
-
-  /* ENTRE CONTATO */
-  .entreContato {
-    margin: 40px auto;
-    text-align: center;
-  }
-
-  /* CONTATO */
-  .cards {
-    flex-direction: column;
-  }
-
+  .card3Servicos3,
   .cardEsquerda,
   .cardDireita,
   .cardDireitaBaixo {
-    width: 90%;
+    width: 90% !important;
+    max-width: 100% !important;
     height: auto;
-    margin: 20px auto;
+    margin: 20px auto !important;
+    left: auto !important;
+    right: auto !important;
+  }
+
+  /* =========================
+     CONTATO
+  ========================= */
+  #contato {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .contatoGeral {
+    height: auto;
   }
 
   #inputNome,
@@ -1214,11 +1254,113 @@ ul {
   #inputMensagem,
   .zapzap {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /* FOOTER */
+  .zapzap {
+    height: auto;
+    padding: 15px;
+  }
+
+  .zap2 {
+    width: 90%;
+    margin: 40px auto 0;
+  }
+
+  /* =========================
+     FOOTER
+  ========================= */
+  #solicitar {
+    height: auto;
+    padding: 40px 0 20px;
+  }
+
   .centralizar {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .linksRapidos,
+  .contatos,
+  .redesSociais {
+    margin-top: 20px;
+  }
+
+  .direitosReservados,
+  .direitosReservados2 {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  header,
+  .divSuprema {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .esquerda {
+    margin-left: 0 !important;
+  }
+
+  .home2h1 {
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+  }
+
+  section,
+  main,
+  div {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* =========================
+     NAVBAR MOBILE – FIX FINAL
+  ========================= */
+
+  header {
+    position: relative !important;
+    height: auto !important;
+    padding: 12px 16px;
+  }
+
+  .divSuprema {
+    position: relative !important;
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .esquerda {
+    position: relative !important;
+    margin: 0 !important;
+    left: auto !important;
+    top: auto !important;
+    text-align: center;
+  }
+
+  .esquerda img,
+  .esquerda h1,
+  .esquerda h2 {
+    display: block;
+    margin: 0 auto;
   }
 }
