@@ -1094,46 +1094,82 @@ ul {
 }
 
 /* =========================
-   RESPONSIVIDADE
+   MOBILE FIRST FIX
 ========================= */
-
-/* Telas até 1366px (monitores menores / notebooks antigos) */
-@media (max-width: 1366px) {
-  nav {
-    margin-left: 30px;
-    margin-right: 30px;
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
 
+  /* Textos */
+  h1 {
+    font-size: clamp(24px, 6vw, 36px);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: clamp(18px, 5vw, 26px);
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* HOME */
   .home {
-    margin-left: 30px;
-    margin-right: 30px;
+    flex-direction: column;
+    height: auto;
+    margin: 0 16px;
+    text-align: center;
   }
 
-  .imagem,
-  .imgExperiencia {
+  .home2h1,
+  .home2p {
+    margin-left: 0;
+  }
+
+  .imagem {
     width: 100%;
-    max-width: 100%;
     height: auto;
+    margin: 30px 0 0 0;
+  }
+
+  /* BOTÕES */
+  .faleConosco,
+  .conhecaServicos {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  /* SOBRE */
+  #sobre {
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 
   .experiencia {
-    margin-left: 0;
-    padding: 0 30px;
+    flex-direction: column;
+    margin: 40px 0;
   }
 
   .experiencia h2,
   .experiencia p {
-    margin-left: 0;
     width: 100%;
+    margin: 0 16px 16px;
+    text-align: center;
   }
 
-  .container,
-  .containerServicos,
-  .containerServicos2 {
-    flex-wrap: wrap;
+  .imgExperiencia {
+    width: 100%;
     height: auto;
+    margin: 0;
   }
 
+  /* CARDS GERAIS */
   .card1,
   .card2,
   .card3,
@@ -1143,44 +1179,24 @@ ul {
   .card1Servicos1,
   .card2Servicos2,
   .card3Servicos3 {
+    width: 90%;
     margin: 20px auto;
   }
 
-  .entreContato {
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 1024px) {
-  header {
-    position: relative;
-  }
-
-  .divSuprema {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .direita {
-    margin-right: 0;
-  }
-
-  .home {
+  /* SERVIÇOS */
+  .containerServicos,
+  .containerServicos2 {
     flex-direction: column;
     height: auto;
+  }
+
+  /* ENTRE CONTATO */
+  .entreContato {
+    margin: 40px auto;
     text-align: center;
   }
 
-  .home2h1 {
-    font-size: 36pt;
-    margin-left: 0;
-  }
-
-  .home2p {
-    margin-left: 0;
-  }
-
+  /* CONTATO */
   .cards {
     flex-direction: column;
   }
@@ -1188,11 +1204,21 @@ ul {
   .cardEsquerda,
   .cardDireita,
   .cardDireitaBaixo {
+    width: 90%;
+    height: auto;
     margin: 20px auto;
+  }
+
+  #inputNome,
+  #inputEmail,
+  #inputMensagem,
+  .zapzap {
     width: 90%;
   }
 
-  .zap2 {
-    width: 90%;
+  /* FOOTER */
+  .centralizar {
+    flex-direction: column;
+    text-align: center;
   }
 }
