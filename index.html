@@ -145,20 +145,27 @@
             <p class="contatop">Estamos prontos para atender você. Escolha a melhor forma de contato!</p>
         </div>
         <div class="cards">
-            <div class="cardEsquerda">
-                <h2>Envie sua mensagem.</h2>
-                <label id="labelNome" for="">Nome completo</label>
-                <input type="text" name="inputNome" id="inputNome" placeholder="Digite seu nome.">
+            <form id="contatoForm">
+  <div class="cardEsquerda">
+    <h2>Envie sua mensagem.</h2>
 
-                <label id="labelNome" for="">E-mail</label>
-                <input type="text" name="inputNome" id="inputNome" placeholder="Digite seu e-mail.">
+    <label id="labelNome" for="inputNome">Nome completo</label>
+    <input type="text" id="inputNome" name="nome" placeholder="Digite seu nome.">
 
-                <label id="labelNome" for="">Mensagem</label>
-                <input type="text" name="inputNome" id="inputMensagem" placeholder="Como podemos ajudar você?">
-                <div class="zapzap">
-                    <i id="zap" class="fa-brands fa-whatsapp"><a id="linkZap" href="#">Enviar via WhatsApp</a></i>
-                </div>
-            </div>
+    <label id="labelNome"  for="inputEmail">E-mail</label>
+    <input type="email" id="inputEmail" name="email" placeholder="Digite seu e-mail.">
+
+    <label id="labelNome"  for="inputMensagem">Mensagem</label>
+    <input type="text" id="inputMensagem" name="mensagem" placeholder="Como podemos ajudar você?">
+
+    <div class="zapzap">
+      <button id="linkZap" type="submit">
+        <i class="fa-brands fa-whatsapp"></i> Enviar via WhatsApp
+      </button>
+    </div>
+  </div>
+</form>
+
             <div class="cardsDaDireita">
                 <div class="cardDireita">
                     <h2>Informações de Contato</h2>
@@ -187,14 +194,14 @@
                 </div>
                 <div class="cardDireitaBaixo">
                     <div class="subDireita">
-                        <i id="telephone2" class="fa-solid fa-comment"></i>
+                        <i id="telephone3" class="fa-solid fa-comment"></i>
                         <div class="titulos2">
                             <h2><strong>Atendimento rápido.</strong></h2>
                             <p>Fale agora conosco pelo WhatsApp.</p>
                         </div>
                     </div>
                     <div class="zap2">
-                        <i id="zapzap2" class="fa-solid fa-paper-plane"></i><a id="linkZap2" href="#">Iniciar conversa.</a>
+                        <i id="zapzap2" class="fa-solid fa-paper-plane"></i><a id="linkZap2" href="https://wa.me/5535984518736?text=Olá, quero saber melhor sobre a CR Contabilidade." target="_blank">Iniciar conversa.</a>
                     </div>                   
                 </div>
             </div>
@@ -218,32 +225,41 @@
         <div class="contatos">
             <li id="contabilidade2">Contatos</li>
             <div class="subDireita">
-                        <i id="telephone" class="fa-solid fa-phone"></i>
+                        <i id="telephone2" class="fa-solid fa-phone"></i>
                         <div class="titulos3">
-                            <h2>Telefone</h2>
-                            <p>(35) 98451-8736</p>
+                            <p>Telefone: (35) 98451-8736</p>
                         </div>
                     </div>
                     <div class="subDireita">
-                        <i id="telephone" class="fa-solid fa-envelope"></i>
+                        <i id="telephone2" class="fa-solid fa-envelope"></i>
                         <div class="titulos3">
-                            <h2>E-mail</h2>
-                            <p>leonardo.soares3345@gmail.com</p>
+                            <p>E-mail: leonardo.soares3345@gmail.com</p>
                         </div>
                     </div>
                     <div class="subDireita">
-                        <i id="telephone" class="fa-solid fa-location-dot"></i>
+                        <i id="telephone2" class="fa-solid fa-location-dot"></i>
                         <div class="titulos3">
-                            <h2>Atendimento</h2>
-                            <p>100% online - Atendemos todo o Brasil.</p>
+                            <p>Atendimento: 100% online - Atendemos todo o Brasil.</p>
                         </div>
                     </div>
         </div>
         <div class="redesSociais">
-
+            <li id="contabilidade2">Redes Sociais</li>
+            <div>
+                <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href=https://www.instagram.com/cr_contabilidade183/ target="_blank" rel="noopener noreferrer" class="instagram-icon"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+            <p>Siga-nos para dicas e novidades sobre contabilidade!</p>
         </div>
+    </div>
+    <div class="direitosReservados">
+        <p>© 2026 CR Contabilidade. Todos os direitos reservados.</p>
+    </div>
+    <div class="direitosReservados2">
+        <p>CNPJ: 00.000.000/0001-00 | CRC: SP-000000/O-0</p>
     </div>
 </footer>
 </body>
 <script src="https://kit.fontawesome.com/98476fcc99.js" crossorigin="anonymous"></script>
+<script src="java.js"></script>
 </html>
