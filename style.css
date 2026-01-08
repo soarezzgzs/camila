@@ -11,11 +11,13 @@ a {
 html {
   scroll-behavior: smooth;
   font-family: "Roboto" bold;
+  overflow-x: hidden;
+
 }
 
 header {
   border-bottom: 1px solid #1f29373a;
-  height: 70px;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,20 +112,22 @@ ul {
 }
 
 #home {
-  height: 80vh;
+  height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
   background-color: #f5f5f5;
+
 }
 
 #servicos {
-  height: 100vh;
+  height: 100rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
+
 }
 
 #contato {
@@ -149,6 +153,8 @@ ul {
   height: 500px;
   margin-left: 100px;
   margin-right: 100px;
+  width: 91.7rem;
+
 }
 
 .home2h1 {
@@ -174,7 +180,7 @@ ul {
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
   justify-content: end;
-  margin-right: 60px;
+  margin-left: 5rem;
 }
 
 .faleConosco {
@@ -207,12 +213,27 @@ ul {
 }
 
 #sobre {
-  display: inline-block;
-  align-items: normal;
-  width: 90%;
-  height: 130vh;
+  width: 100%;
+  height: 80rem;
   margin-left: 100px;
   margin-right: 100px;
+  display: inline-flex;
+  align-items: start;
+  justify-content: center;
+
+}
+
+.sobreGeral{
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    height: auto;
+    margin-right: 20.3rem;
+
+}
+
+.sobre{
+    width: 100%;
 }
 
 .sobreh1 {
@@ -223,6 +244,7 @@ ul {
   align-items: center;
   color: #1f2937;
   font-size: 40pt;
+  margin-left: 4rem;
 }
 
 .sobrep1 {
@@ -236,6 +258,8 @@ ul {
   justify-content: center;
   align-items: center;
   font-size: 15pt;
+  margin-left: 4rem;
+
 }
 
 .sobrep2 {
@@ -246,6 +270,8 @@ ul {
   justify-content: center;
   align-items: center;
   font-size: 15pt;
+  margin-left: 4rem;
+
 }
 
 .sobrep3 {
@@ -257,20 +283,27 @@ ul {
   justify-content: center;
   align-items: center;
   font-size: 15pt;
+  margin-left: 4rem;
+
 }
 
 .experiencia {
-  display: flex;
   margin-top: 100px;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  margin-left: 150px;
+  align-items: center;
+  height: 500px;
+  margin-left: 100px;
+  margin-right: 100rem !important;
+  width: 91.7rem;
+
 }
 
 .experiencia2 {
   display: inline-block;
   width: fit-content;
-  margin-right: 110px;
+  margin-right: 4.7rem;
+  
 }
 
 .experiencia h2 {
@@ -280,6 +313,7 @@ ul {
   color: #1f2937;
   font-size: 20pt;
   margin-left: 200px;
+
 }
 
 .experiencia p {
@@ -289,21 +323,23 @@ ul {
   color: #6b7280;
   font-size: 15pt;
   margin-left: 200px;
+
 }
 
 .imgExperiencia {
-  width: 810px;
+  width: 45rem;
   height: 500px;
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
   justify-content: end;
-  margin-right: 300px;
+  margin-right: 10rem;
 }
 
 .container2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .container {
@@ -312,12 +348,13 @@ ul {
   align-items: center;
   width: 100%;
   height: 500px;
+  margin-left: 6.6rem;
+
 }
 
 .card1 {
   width: 450px;
   height: 300px;
-  margin-left: 50px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   margin-bottom: 100px;
@@ -415,7 +452,7 @@ ul {
   display: inline-block;
   align-items: normal;
   width: 100%;
-  height: 110vh;
+  height: 60rem;
 }
 
 .servicosh1 {
@@ -430,8 +467,6 @@ ul {
 }
 
 .servicosp {
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 5px;
   margin-top: 5px;
   color: #6b7280;
@@ -441,23 +476,42 @@ ul {
   align-items: center;
 }
 
+.containerServicosCentral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divRei{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .containerServicos {
   /* aaa */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  width: 100%;
-  height: 280px;
+
+}
+
+.cardGeral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95rem;
+
 }
 
 .card1Servicos {
   width: 450px;
   height: 300px;
-  margin-left: 150px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+    
 }
 
 #document {
@@ -538,10 +592,10 @@ ul {
 .card3Servicos {
   width: 450px;
   height: 300px;
-  margin-right: 90px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+  margin-right: 1.2rem;
 }
 
 #graphic {
@@ -572,20 +626,30 @@ ul {
   transition: 0.5s ease;
 }
 
+.cardGeral2{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95rem;
+}
+
+.containerServicosCentral2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .containerServicos2 {
   /* aaa */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 280px;
 }
 
-.card1Servicos1 {
+.card1Servicos1{
   width: 450px;
   height: 300px;
-  margin-left: 150px;
-  margin-top: 100px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
@@ -636,8 +700,6 @@ ul {
 .card2Servicos2 {
   width: 450px;
   height: 300px;
-  margin-top: 100px;
-  margin-left: 20px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
@@ -674,12 +736,11 @@ ul {
 .card3Servicos3 {
   width: 450px;
   height: 300px;
-  margin-top: 100px;
-  margin-left: 20px;
-  margin-right: 90px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+  margin-right: 1.2rem;
+
 }
 
 #dollar {
@@ -724,11 +785,17 @@ ul {
   transition: 0.5s ease;
 }
 
+.entreContatoGeral{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .entreContato {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  margin-left: 80vh;
   height: 100px;
 }
 
@@ -737,11 +804,13 @@ ul {
   display: flex;
   color: #6b7280;
   font-size: 12pt;
+
 }
 
 .entreContato2 {
   width: 300px;
   margin-left: 60px;
+
 }
 
 .entreContatoa {
@@ -944,6 +1013,7 @@ ul {
 
 .cardsDaDireita {
   margin-left: 50px;
+  margin-right: 3rem;
 }
 
 .zap2 {
@@ -1119,6 +1189,11 @@ ul {
     display: none;
   }
 
+  header{
+    justify-content: center;
+    align-items: center;
+  }
+
   .divSuprema {
     justify-content: center;
   }
@@ -1135,13 +1210,14 @@ ul {
     height: auto;
     margin: 0 16px;
     text-align: center;
+    
   }
 
   .home2h1 {
     font-size: clamp(26px, 7vw, 34px);
     line-height: 1.2;
     margin-bottom: 20px;
-    padding: 0 10px;
+    padding: 0 105px 0 0;
   }
 
   .home2p {
@@ -1151,19 +1227,22 @@ ul {
   }
 
   .imagem {
-    width: 100%;
+    width: 60rem;
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
+    margin-right: 5rem;
   }
 
   /* BOTÕES */
   .faleConosco,
   .conhecaServicos {
-    display: block;
     width: 100%;
     max-width: 300px;
     margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* =========================
@@ -1171,37 +1250,42 @@ ul {
   ========================= */
   #sobre {
     width: 100%;
-    height: auto;
+    height: 113rem;
     margin: 0;
+
   }
 
   .sobreh1 {
     font-size: clamp(26px, 6vw, 32px);
     text-align: center;
+    margin-left: 10rem;
   }
 
   .sobre p {
     font-size: 14px;
     padding: 0 12px;
     text-align: center;
+    margin-left: 10rem;
+
   }
 
   .experiencia {
     flex-direction: column;
     margin: 40px 0;
+    margin-top: 6rem;
   }
 
   .experiencia h2,
   .experiencia p {
     width: 100%;
-    margin: 0 16px 16px;
     text-align: center;
   }
 
   .imgExperiencia {
     width: 100%;
     height: auto;
-    margin: 20px 0;
+    margin-left: 30.3rem;
+    margin-bottom: 5rem;
   }
 
   /* =========================
@@ -1215,6 +1299,11 @@ ul {
     flex-direction: column;
     height: auto;
     overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container2{
+    margin-left: 8.3rem;
   }
 
   .card1,
@@ -1232,7 +1321,7 @@ ul {
     width: 90% !important;
     max-width: 100% !important;
     height: auto;
-    margin: 20px auto !important;
+    margin: 10px 0 !important;
     left: auto !important;
     right: auto !important;
   }
@@ -1243,10 +1332,21 @@ ul {
   #contato {
     height: auto;
     padding-bottom: 60px;
+    justify-content: center;
   }
 
   .contatoGeral {
     height: auto;
+    justify-content: center;
+  }
+
+  .contatoh1{
+    margin-left: 5rem;
+  }
+
+  .contatop{
+    margin-left: 1rem;
+
   }
 
   #inputNome,
@@ -1266,6 +1366,10 @@ ul {
   .zap2 {
     width: 90%;
     margin: 40px auto 0;
+  }
+
+  .cardsDaDireita{
+    margin-right: 3.2rem !important;
   }
 
   /* =========================
