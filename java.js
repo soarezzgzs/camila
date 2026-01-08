@@ -16,4 +16,3 @@ document.getElementById("contatoForm").addEventListener("submit", function(e) {
 
   window.open(link, "_blank"); // abre o WhatsApp em nova aba
 });
-
