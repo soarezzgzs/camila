@@ -17,14 +17,13 @@ html {
 header {
   border-bottom: 1px solid #1f29373a;
   height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   position: fixed;
   background-color: white;
   font-family: "Roboto" bold;
   z-index: 10000;
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -35,12 +34,9 @@ body {
 nav {
   display: inline-block;
   align-items: center;
-  font-style: "Roboto" bold;
-  width: 100%;
-  background-color: white;
+  width: 100rem;
   z-index: 10000;
-  margin-right: 100px;
-  margin-left: 100px;
+  max-width: 100rem;
 }
 
 li {
@@ -53,8 +49,6 @@ li {
 #cr {
   border-radius: 6px;
   padding: 3px;
-  width: fit-content;
-  height: fit-content;
   color: white;
   background-color: #7c2d37;
   cursor: auto;
@@ -74,7 +68,6 @@ li {
 #parteDireita {
   color: #1f2937;
   font-size: 12pt;
-  margin-right: 20px;
   cursor: normal;
   z-index: 10000;
 }
@@ -99,10 +92,11 @@ li {
 }
 
 .divSuprema {
-  width: 100%;
+  width: 100rem;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50rem;
 }
 
 ul {
@@ -128,7 +122,7 @@ ul {
 }
 
 #contato {
-  height: 100vh;
+  height: 70rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,7 +265,7 @@ ul {
 }
 
 .imgExperiencia {
-  width: 52rem;
+  width: 50rem;
   height: 500px;
   object-fit: cover;
   border-radius: 10px;
