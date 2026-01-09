@@ -1050,18 +1050,18 @@ ul {
   z-index: 1000;
 }
 
+/* ======= MEDIA MOBILE ======== */
+
 @media (max-width: 768px) {
-  /* =========================
-     BASE GLOBAL
-  ========================= */
+  /* ===== RESET MOBILE ===== */
+  html,
   body {
     overflow-x: hidden;
-    padding-top: 70px;
   }
 
   * {
-    max-width: 100%;
     box-sizing: border-box;
+    max-width: 100%;
   }
 
   img {
@@ -1069,125 +1069,123 @@ ul {
     height: auto;
   }
 
-  /* =========================
-     HEADER
-  ========================= */
+  section {
+    height: auto !important;
+    padding: 40px 16px;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    position: fixed;
+    height: auto;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
   .direita {
     display: none;
   }
 
-  header {
-    justify-content: center;
-    align-items: center;
-  }
-
   .divSuprema {
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
 
   .esquerda {
     margin: 0;
+    text-align: center;
   }
 
-  /* =========================
-     HOME
-  ========================= */
+  /* ===== HOME ===== */
+  #home {
+    padding-top: 100px;
+  }
+
   .home {
     flex-direction: column;
-    height: auto;
-    margin: 0 16px;
+    margin: 0;
+    width: 100%;
     text-align: center;
   }
 
   .home2h1 {
     font-size: clamp(26px, 7vw, 34px);
     line-height: 1.2;
-    margin-bottom: 20px;
-    padding: 0 105px 0 0;
+    margin: 0 0 20px;
+    padding: 0;
   }
 
   .home2p {
     font-size: 14px;
-    margin-bottom: 30px;
-    padding: 0 10px;
+    margin-bottom: 24px;
+    padding: 0;
   }
 
   .imagem {
-    width: 60rem;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 8px;
-    margin-right: 5rem;
+    margin: 20px 0 0;
+    width: 100%;
   }
 
-  /* BOTÕES */
   .faleConosco,
   .conhecaServicos {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  /* =========================
-     SOBRE
-  ========================= */
+  /* ===== SOBRE ===== */
   #sobre {
-    width: 100%;
-    height: 113rem;
-    margin: 0;
+    padding-top: 60px;
   }
 
   .sobreh1 {
     font-size: clamp(26px, 6vw, 32px);
+    margin: 0 0 16px;
     text-align: center;
-    margin-left: 10rem;
   }
 
   .sobre p {
     font-size: 14px;
-    padding: 0 12px;
     text-align: center;
-    margin-left: 10rem;
   }
 
   .experiencia {
+    display: flex;
     flex-direction: column;
-    margin: 40px 0;
-    margin-top: 6rem;
+    gap: 20px;
   }
 
   .experiencia h2,
   .experiencia p {
-    width: 100%;
     text-align: center;
+    margin: 0;
   }
 
   .imgExperiencia {
     width: 100%;
-    height: auto;
-    margin-left: 30.3rem;
-    margin-bottom: 5rem;
+    margin: 0;
+    height: 20rem;
   }
 
-  /* =========================
-     CARDS / SERVIÇOS
-  ========================= */
+  /* ===== CARDS (SOBRE + SERVIÇOS + CONTATO) ===== */
+
   .container,
   .container2,
   .containerServicos,
   .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
   .cards {
+    display: flex;
     flex-direction: column;
-    height: auto;
-    overflow-x: hidden;
+    align-items: center;
     width: 100%;
-  }
-
-  .container2 {
-    margin-left: 8.3rem;
+    gap: 20px;
   }
 
   .card1,
@@ -1199,155 +1197,246 @@ ul {
   .card1Servicos1,
   .card2Servicos2,
   .card3Servicos3,
-  .cardEsquerda,
+  .cardEsquerda {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0;
+  }
   .cardDireita,
   .cardDireitaBaixo {
-    width: 90% !important;
-    max-width: 100% !important;
+    width: 100%;
+    max-width: 360px;
     height: auto;
-    margin: 10px 0 !important;
-    left: auto !important;
-    right: auto !important;
+    margin: 0;
+    margin-bottom: 2rem;
   }
 
-  /* =========================
-     CONTATO
-  ========================= */
+  /* ===== CONTATO ===== */
   #contato {
-    height: auto;
-    padding-bottom: 60px;
-    justify-content: center;
+    padding-bottom: 80px;
   }
 
-  .contatoGeral {
-    height: auto;
-    justify-content: center;
-  }
-
-  .contatoh1 {
-    margin-left: 5rem;
-  }
-
-  .contatop {
-    margin-left: 1rem;
+  .cardsDaDireita {
+    margin: 0;
   }
 
   #inputNome,
   #inputEmail,
-  #inputMensagem,
-  .zapzap {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  #inputMensagem {
+    width: 15rem;
   }
 
-  .zapzap {
-    height: auto;
-    padding: 15px;
-  }
-
+  .zapzap,
   .zap2 {
-    width: 90%;
-    margin: 40px auto 0;
+    width: 14rem;
   }
 
-  .cardsDaDireita {
-    margin-right: 3.2rem !important;
-  }
-
-  /* =========================
-     FOOTER
-  ========================= */
+  /* ===== FOOTER ===== */
   #solicitar {
+    padding: 40px 16px;
     height: auto;
-    padding: 40px 0 20px;
   }
 
   .centralizar {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-    padding-bottom: 30px;
-  }
-
-  .linksRapidos,
-  .contatos,
-  .redesSociais {
-    margin-top: 20px;
-  }
-
-  .direitosReservados,
-  .direitosReservados2 {
-    margin-top: 15px;
-    text-align: center;
+    gap: 24px;
   }
 }
 
-@media (max-width: 768px) {
+/* ======= MEDIA NOTEBOOK PEQUENO OU TABLET ============ */
+
+@media (min-width: 769px) and (max-width: 1439px) {
   html,
   body {
     overflow-x: hidden;
   }
 
-  header,
+  /* ===== RESET DE LARGURAS FIXAS ===== */
+  nav,
+  .divSuprema,
+  .home,
+  .sobreGeral,
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
+  .cards,
+  .centralizar {
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* ===== NAVBAR ===== */
+  header {
+    height: auto;
+    padding: 14px 0;
+  }
+
+  nav {
+    width: 100% !important;
+  }
+
   .divSuprema {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .esquerda {
-    margin-left: 0 !important;
+    margin: 0 !important;
+    white-space: nowrap;
+  }
+
+  .direita {
+    display: flex;
+    gap: 18px;
+    margin: 0 !important;
+  }
+
+  /* ===== HOME ===== */
+  #home {
+    padding-top: 120px;
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .home2 {
+    width: 55%;
   }
 
   .home2h1 {
-    width: 100%;
-    max-width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    text-align: center;
+    font-size: clamp(30px, 3.2vw, 42px);
+    line-height: 1.2;
   }
 
-  section,
-  main,
-  div {
-    max-width: 100%;
+  .home2p {
+    font-size: 15px;
+  }
+
+  .home2 a {
+    display: inline-flex;
+    margin-right: 14px;
+  }
+
+  .faleConosco {
+    width: fit-content;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  .conhecaServicos {
+    width: 14rem;
+    align-items: center;
+  }
+
+  .imagem {
+    width: 65%;
+    margin: 0 !important;
+  }
+
+  /* ===== SOBRE ===== */
+  .experiencia {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .imgExperiencia {
+    width: 65%;
+    margin: 0 !important;
+  }
+
+  /* ===== CARDS ===== */
+  .container,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2 {
+    display: flex;
+    justify-content: center !important;
+    gap: 32px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card1Servicos,
+  .card2Servicos,
+  .card3Servicos,
+  .card1Servicos1,
+  .card2Servicos2,
+  .card3Servicos3 {
+    width: 300px;
+    margin: 0;
+  }
+
+  .card1Servicos,
+  .card2Servicos,
+  .card3Servicos,
+  .card1Servicos1,
+  .card2Servicos2,
+  .card3Servicos3 {
+    margin-bottom: 2rem;
+  }
+
+  /* ===== CONTATO ===== */
+  .cards {
+    display: flex;
+    gap: 32px;
+  }
+
+  .cardEsquerda,
+  .cardDireita,
+  .cardDireitaBaixo {
+    width: 80%;
+    margin: 0;
+  }
+
+  .cardEsquerda {
+    margin-left: 10rem;
   }
 }
 
-@media (max-width: 768px) {
-  /* =========================
-     NAVBAR MOBILE – FIX FINAL
-  ========================= */
+/* =========== MEDIA DESKTOP GRANDE ========= */
 
-  header {
-    position: relative !important;
-    height: auto !important;
-    padding: 12px 16px;
-  }
-
+@media (min-width: 1440px) {
+  nav,
   .divSuprema {
-    position: relative !important;
-    height: auto !important;
-    display: flex;
-    align-items: center;
+    max-width: 1600px;
+    margin: 0 1rem 0 1rem !important;
+  }
+
+  .home,
+  .sobreGeral,
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
+  .cards,
+  .centralizar {
+    max-width: 1440px;
+    margin: 0 auto !important;
+  }
+
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2 {
     justify-content: center;
-  }
-
-  .esquerda {
-    position: relative !important;
-    margin: 0 !important;
-    left: auto !important;
-    top: auto !important;
-    text-align: center;
-  }
-
-  .esquerda img,
-  .esquerda h1,
-  .esquerda h2 {
-    display: block;
-    margin: 0 auto;
+    gap: 48px;
   }
 }
