@@ -1,5 +1,5 @@
 document.getElementById("contatoForm").addEventListener("submit", function(e) {
-  e.preventDefault(); // impede o envio normal do formulário
+  e.preventDefault();
 
   const nome = document.getElementById("inputNome").value.trim();
   const email = document.getElementById("inputEmail").value.trim();
@@ -10,9 +10,9 @@ document.getElementById("contatoForm").addEventListener("submit", function(e) {
     return;
   }
 
-  const numero = "5535984518736"; // seu número com DDD
+  const numero = "5535984518736";
   const texto = `Olá, meu nome é ${nome}. Meu email é ${email}. Mensagem: ${mensagem}`;
   const link = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
-  window.open(link, "_blank"); // abre o WhatsApp em nova aba
+  window.open(link, "_blank");
 });
