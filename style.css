@@ -4,6 +4,13 @@
   margin: 0;
 }
 
+:root{
+    --cor-destaque: #7c2d37;
+    --cor-fundo1: #ffffff;
+    --cor-fundo2: #f5f5f5;
+
+}
+
 a {
   text-decoration: none;
 }
@@ -19,7 +26,7 @@ header {
   height: 4rem;
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: var(--cor-fundo1);
   font-family: "Roboto" bold;
   z-index: 10000;
   display: flex;
@@ -50,7 +57,7 @@ li {
   border-radius: 6px;
   padding: 3px;
   color: white;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   cursor: auto;
   font-style: bold;
   z-index: 10000;
@@ -73,11 +80,11 @@ li {
 }
 
 #parteDireita:hover {
-  color: #7c2d37;
+  color: var(--cor-destaque);
 }
 
 #orcamento {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   border-radius: 20px;
   padding: 8px;
@@ -110,7 +117,7 @@ ul {
   align-items: center;
   justify-content: center;
   z-index: 100;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo2);
 }
 
 #servicos {
@@ -118,7 +125,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo2);
 }
 
 #contato {
@@ -176,7 +183,7 @@ ul {
 .faleConosco {
   margin-left: 50px;
   height: 10px;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   border-radius: 30px;
   padding: 15px 30px;
@@ -190,7 +197,7 @@ ul {
 .conhecaServicos {
   margin-left: 5px;
   height: 10px;
-  border: 1px solid #7c2d37;
+  border: 1px solid var(--cor-destaque);
   color: #7c2d37;
   border-radius: 30px;
   padding: 15px 30px;
@@ -417,7 +424,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
 }
 
@@ -440,7 +447,7 @@ ul {
 }
 
 .card1Servicos:hover #document {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -466,7 +473,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
 }
 
@@ -477,7 +484,7 @@ ul {
 }
 
 .card2Servicos:hover #calculator {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);;
   color: white;
   transition: 0.5s ease;
 }
@@ -503,7 +510,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -515,7 +522,7 @@ ul {
 }
 
 .card3Servicos:hover #graphic {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -560,7 +567,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -586,7 +593,7 @@ ul {
 }
 
 .card1Servicos1:hover #people {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -610,7 +617,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -622,7 +629,7 @@ ul {
 }
 
 .card2Servicos2:hover #check {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -647,7 +654,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -673,7 +680,7 @@ ul {
 }
 
 .card3Servicos3:hover #dollar {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -705,7 +712,7 @@ ul {
 }
 
 .entreContatoa {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   display: flex;
   justify-content: center;
   color: white;
@@ -805,7 +812,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   width: 440px;
   margin-left: 30px;
   cursor: pointer;
@@ -823,7 +830,7 @@ ul {
 #linkZap {
   color: white;
   margin-left: 20px;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   border: none;
 }
 
@@ -841,7 +848,7 @@ ul {
 
 #telephone {
   margin-top: 20px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   background-color: rgba(124, 45, 55, 0.1);
   border-radius: 50%;
   height: 50px;
@@ -880,7 +887,7 @@ ul {
 
 #telephone2 {
   margin-top: 20px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   background-color: rgba(124, 45, 55, 0.1);
   border-radius: 50%;
   height: 30px;
@@ -897,7 +904,7 @@ ul {
   width: 600px;
   height: 250px;
   border-radius: 15px;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   box-shadow: 10px 10px 10px rgba(228, 234, 247, 0.5);
   padding: 20px;
 }
@@ -917,12 +924,12 @@ ul {
   width: 500px;
   margin-left: 30px;
   background-color: white;
-  color: #7c2d37;
+  color: var(--cor-destaque);
 }
 
 #linkZap2 {
   width: 120px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   margin-left: 20px;
   display: flex;
   justify-content: center;
@@ -959,7 +966,7 @@ ul {
   width: fit-content;
   height: fit-content;
   color: white;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   cursor: auto;
   font-style: bold;
   z-index: 10000;
