@@ -5,9 +5,9 @@
 }
 
 :root{
-    --cor-destaque: #7c2d37;
-    --cor-fundo1: #ffffff;
-    --cor-fundo2: #f5f5f5;
+    --cor-destaque: #7B685C;
+    --cor-fundo1:  #F5F5F5;
+    --cor-fundo2: #FFFAFA;
 
 }
 
@@ -17,7 +17,7 @@ a {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Roboto" bold;
+  font-family: "Calibri" bold;
   overflow-x: hidden;
 }
 
@@ -34,7 +34,6 @@ header {
 }
 
 body {
-  font-family: "Roboto" bold;
   overflow-x: hidden;
 }
 
@@ -94,7 +93,7 @@ li {
 }
 
 #orcamento:hover {
-  background-color: rgba(124, 45, 55, 0.8);
+  background-color: #50423a;
   z-index: 10000;
 }
 
@@ -147,7 +146,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo2);
   height: 500px;
   margin-left: 100px;
   margin-right: 100px;
@@ -159,6 +158,8 @@ ul {
   font-size: 55pt;
   color: #1f2937;
   margin-bottom: 50px;
+  font-family: "Calibri" bold !important;
+
 }
 
 .home2p {
@@ -172,7 +173,7 @@ ul {
 }
 
 .imagem {
-  width: 1000px;
+  width: 100rem;
   height: 500px;
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
@@ -191,14 +192,14 @@ ul {
 }
 
 .faleConosco:hover {
-  background-color: rgba(124, 45, 55, 0.8);
+  background-color: var(--cor-destaque);
 }
 
 .conhecaServicos {
   margin-left: 5px;
   height: 10px;
   border: 1px solid var(--cor-destaque);
-  color: #7c2d37;
+  color: var(--cor-destaque);
   border-radius: 30px;
   padding: 15px 30px;
   width: 60px;
@@ -329,7 +330,7 @@ ul {
   margin-bottom: 30px;
   background-color: rgba(124, 45, 55, 0.1);
   border-radius: 50%;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
 }
 
@@ -806,7 +807,7 @@ ul {
 
 .zapzap {
   margin-top: 20px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 30px;
   color: white;
   display: flex;
@@ -906,7 +907,7 @@ ul {
   border-radius: 15px;
   background-color: var(--cor-destaque);
   box-shadow: 10px 10px 10px rgba(228, 234, 247, 0.5);
-  padding: 20px;
+  padding: 15px;
 }
 
 .cardsDaDireita {
@@ -984,7 +985,7 @@ ul {
 }
 
 .esquerda2 p {
-  color: rgb(101, 110, 126);
+  color: white;
 }
 
 .linksRapidos {
@@ -1028,7 +1029,7 @@ ul {
 }
 
 .redesSociais p {
-  color: #6b7280;
+  color: white;
 }
 
 .direitosReservados {
