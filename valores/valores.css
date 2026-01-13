@@ -17,7 +17,7 @@ a {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Calibri" bold;
+  font-family: "Calibri";
   overflow-x: hidden;
 }
 
@@ -190,7 +190,7 @@ ul {
 .card3:hover,
 .card4:hover {
   transition: 0.5s ease;
-  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.2);
 }
 .card-header {
   display: flex;
@@ -283,6 +283,7 @@ ul {
   font-size: 20pt;
   font-weight: bold;
   padding: 1rem;
+  color: #1f2937;
 }
 
 .tabelaEsquerda span {
@@ -327,6 +328,7 @@ ul {
   font-size: 20pt;
   font-weight: bold;
   padding: 1rem;
+  color: #1f2937;
 }
 
 .tabelaDireita span {
@@ -474,4 +476,172 @@ ul {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+/* ========== MEDIA MOBILE ========== */
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-fundo1);
+    z-index: 99999;
+    height: auto;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+
+  .divSuprema {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  /* LOGO */
+  .esquerda {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* LINKS */
+  .direita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* BOTÃO */
+  #orcamento {
+    margin-top: 0.5rem;
+  }
+
+  body {
+    padding-top: 7.5rem; /* espaço real da navbar */
+  }
+
+  #parteDireita,
+  #orcamento {
+    font-size: 11pt;
+  }
+
+  /* ===== DIFERENCIAL ===== */
+  #diferencial {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 100%;
+  }
+
+  .card-header {
+    gap: 0.75rem;
+  }
+
+  .missao {
+    font-size: 14pt;
+  }
+
+  .missao2 {
+    font-size: 11pt;
+    text-align: left;
+  }
+
+  /* ===== VALORES ===== */
+  #valores {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .centralizarTabela {
+    flex-direction: column;
+  }
+
+  .tabelaEsquerda,
+  .tabelaDireita {
+    width: 100%;
+    height: auto;
+  }
+
+  .tabelaItem {
+    font-size: 11pt;
+  }
+
+  /* ===== FOOTER ===== */
+  #solicitar {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .centralizar {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .esquerda2,
+  .linksRapidos,
+  .contatos,
+  .redesSociais {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .linksRapidos a {
+    justify-content: center;
+  }
+
+  .subDireita {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+/* ========== MEDIA MOBILE PEQUENA ========== */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18pt;
+  }
+
+  h2 {
+    font-size: 15pt;
+  }
+
+  .missao {
+    font-size: 13pt;
+  }
+
+  .missao2,
+  .tabelaItem {
+    font-size: 10.5pt;
+  }
+
+  #target,
+  #target2 {
+    width: 35px;
+    height: 35px;
+    font-size: 14pt;
+  }
 }
