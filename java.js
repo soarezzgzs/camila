@@ -10,7 +10,7 @@ document.getElementById("contatoForm").addEventListener("submit", function(e) {
     return;
   }
 
-  const numero = "5535984518736";
+  const numero = "553584431748";
   const texto = `Olá, meu nome é ${nome}. Meu email é ${email}. Mensagem: ${mensagem}`;
   const link = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
