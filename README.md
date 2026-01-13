@@ -41,9 +41,9 @@ ________________________________________________________________________________
 
 Telefone/WhatsApp: (35) 98443-1748
 
-LinkedIn: Camila Ribeiro
+LinkedIn: Camila Ribeiro ( https://www.linkedin.com/in/camila-ribeiro-45aaa7172/ )
 
-Instagram: @cr_contabilidade183
+Instagram: @cr_contabilidade183 
 ____________________________________________________________________________________
 👨‍💻 **Autor**
 
