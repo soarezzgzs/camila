@@ -54,6 +54,7 @@ GitHub: soarezzgzs
 Linkedin: Leonardo Soares ( https://www.linkedin.com/in/leonardo-soares-57a19039b/ )
 ____________________________________________________________________________________
 📄 Licença
+
 Este projeto está licenciado sob a licença MIT.
 
 
