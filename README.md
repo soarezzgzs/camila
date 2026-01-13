@@ -21,28 +21,36 @@ Acesse o site publicado no Netlify:
 
 HTML5
 CSS3
+
 JavaScript
+
 Responsividade para dispositivos móveis
+
 Integração com WhatsApp para contato rápido
 
 ✅ Funcionalidades
 
 Exibição dos serviços oferecidos pela CR Contabilidade
+
 Formulário de contato integrado ao WhatsApp
+
 Layout responsivo para diferentes tamanhos de tela
 
 📞 Contato
 
 Telefone/WhatsApp: (35) 98443-1748
+
 LinkedIn: Camila Ribeiro
+
 Instagram: @cr_contabilidade183
 
 👨‍💻 Autor
 Desenvolvido por Leonardo Soares
 
 GitHub: soarezzgzs
+Linkedin: Leonardo Soares ( https://www.linkedin.com/in/leonardo-soares-57a19039b/ )
 
 📄 Licença
 Este projeto está licenciado sob a licença MIT.
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/<se
+
