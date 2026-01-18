@@ -3,7 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CR Contabilidade</title>
+    <title>CR Contabilidade - MEI, Impostos e Folha</title>
+    <meta name="description" content="Escritório contábil especializado em abertura de empresa, MEI e impostos. Atendimento rápido e consultivo.">
+    <meta property="og:title" content="Contabilidade Camila">
+    <meta property="og:description" content="Abertura de empresa, MEI e impostos com atendimento ágil.">
+    <meta property="og:image" content="https://github.com/soarezzgzs/camila/blob/main/assets/camila.jpg?raw=true">
+
+    
+    <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "AccountingService",
+     "@id": "https://soarezzgzs.github.io/camila/#org",
+    "name": "CR Contabilidade",
+     "url": "https://soarezzgzs.github.io/camila/",
+     "telephone": "+55 35 98443-1748",
+     "email": "camilaribeiro183@gmail.com",
+     "image": "https://soarezzgzs.github.io/camila/assets/camila.jpg",
+    "logo": "https://soarezzgzs.github.io/camila/assets/camila.jpg",
+    "priceRange": "$$",
+    "areaServed": "Brasil",
+     "sameAs": [
+      "https://www.instagram.com/cr_contabilidade183/",
+      "https://www.linkedin.com/in/camila-ribeiro-45aaa7172/"
+     ],
+     "openingHoursSpecification": [{
+       "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+     }],
+    "serviceType": [
+      "Declaração de Imposto de Renda",
+      "Contabilidade para MEI",
+      "Planejamento tributário",
+      "Abertura de empresa",
+      "Regularização Fiscal",
+      "Consultoria Financeira"
+  ]
+  
+    "contactPoint": { <!-- deixa o contato mais explícito para buscadores  -->
+     "@type": "ContactPoint",
+     "contactType": "customer service",
+     "telephone": "+55 11 91234-5678",
+     "availableLanguage": ["pt-BR"]
+    }
+    "knowsAbout": ["Simples Nacional", "Lucro Presumido", "MEI", "IRPF", "eSocial"] <!-- Palavras chave  -->
+}
+</script>
+
+
     <link rel="stylesheet" href="cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +74,7 @@
                         <li><a id="parteDireita" href="#sobre">Sobre</a></li>
                         <li><a id="parteDireita" href="#servicos">Serviços</a></li>
                         <li><a id="parteDireita" href="#contato">Contato</a></li>
-                        <li><a id="orcamento" href="#solicitar">Solicitar Orçamento</a></li>
+                        <li><a id="orcamento" href="#contato">Solicitar Orçamento</a></li>
                     </div>  
                 </div>
                 </ul>
@@ -39,10 +88,11 @@
                 <a class="faleConosco" href="#contato">Fale conosco</a> <a class="conhecaServicos" href="#servicos">Conheça nossos Serviços</a>
             </div>
             
-            <img class="imagem" src="./assets/photo-1762427354051-a9bdb181ae3b.jfif" alt="">
+            <img class="imagem" src="./assets/camila.jpg" alt="logo CR Contabilidade">
         </div>
     </section>
     <section id="sobre">
+        <div class="sobreGeral">
             <div class="sobre">
                 <h1 class="sobreh1">Sobre a CR Contabilidade</h1>
                 <p class="sobrep1">Somos uma empresa especializada em contabilidade para pessoas físicas e MEIs, oferecendo</p>
@@ -51,19 +101,20 @@
             </div>
             <div class="experiencia">
                 <div class="experiencia2">
-                    <h2>Expêriencia e Cofiabilidade</h2>
+                    <h2>Expêriencia e Confiabilidade</h2>
                     <p>Com anos de experiência no mercado, a CR Contabilidade se destaca pelo atendimento personalizado e pela busca constante de inovação. Nosso objetivo é facilitar a vida de nossos clientes, permitindo que foquem no crescimento de seus negócios enquanto cuidamos de toda a parte contábil e fiscal.</p>
                     <p>Utilizamos as melhores práticas do mercado e mantemos um relacionamento próximo com cada cliente, garantindo que todas as suas necessidades sejam atendidas com excelência.</p>
                 </div>
-                <img class="imgExperiencia" src="./assets/photo-1758518729908-d4220a678d81.jfif" alt="">
+                <img class="imgExperiencia" src="./assets/photo-1758518729908-d4220a678d81.jfif" alt="Foto da Camila">
             </div>
-            <div class="container2">
+            <div class="containerGeral">
 
-                <div class="container">
-                    <div class="card1">
-                        <i id="target" class="fa-solid fa-bullseye"></i>
-                        
-                        <h3 class="missao">Missão</h3>
+                <div class="container2">
+                    <div class="container">
+                        <div class="card1">
+                            <i id="target" class="fa-solid fa-bullseye"></i>
+                            
+                            <h3 class="missao">Missão</h3>
                         <p class="missao2">Oferecer soluções contábeis de excelência, simplificando processos e proporcionando tranquilidade aos nossos clientes.</p>
                     </div>
                     <div class="card2">
@@ -80,60 +131,77 @@
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
     </section>
 <section id="servicos">
     <div class="servicos">
         <h1 class="servicosh1">Nossos Serviços</h1>
         <p class="servicosp">Soluções contábeis completas e personalizadas para atender todas as suas necessidades</p>
             </div>
-             <div class="containerServicos">
-                    <div class="card1Servicos">
-                        <i id="document" class="fa-regular fa-file"></i>
-                        
-                        <h3 class="missao">Declaração de Imposto de Renda</h3>
-                        <p class="missao2">Declaração completa de IRPF com análise detalhada e máxima restituição.</p>
-                    </div>
-                    <div class="card2Servicos">
-                        <i id="calculator" class="fa-solid fa-calculator"></i>
-                        
-                        <h3 class="valores">Contabilidade para MEI</h3>
-                        <p class="valores2">Gestão completa da contabilidade do seu MEI, com emissão de notas e relatórios.</p>
-                    </div>
-                    <div class="card3Servicos">
-                        <i id="graphic" class="fa-solid fa-chart-line"></i>
-                        
-                        <h3 class="valores">Planejamento tributário</h3>
-                        <p class="valores2">Estratégias para reduzir sua carga tributária de forma legal e eficiente.</p>
-                    </div>
-                </div>
-                <div class="containerServicos2">
-                    <div class="card1Servicos1">
-                        <i id="people" class="fa-solid fa-user-group"></i>
-                        
-                        <h3 class="missao">Abertura de empresa</h3>
-                        <p class="missao2">Assessoria completa para formalização do seu MEI ou empresa individual.</p>
-                    </div>
-                    <div class="card2Servicos2">
-                        <i id="check" class="fa-solid fa-circle-check"></i>
-                        
-                        <h3 class="valores">Regularização Fiscal</h3>
-                        <p class="valores2">Correção de pendências e regularização de débitos com a Receita Federal.</p>
-                    </div>
-                    <div class="card3Servicos3">
-                        <i id="dollar" class="fa-solid fa-dollar-sign"></i>
-                        
-                        <h3 class="valores">Consultoria Financeira</h3>
-                        <p class="valores2">Orientação para melhor gestão financeira e tomada de decisões estratégicas.</p>
+            <div class="divRei">
+
+                <div class="containerServicosCentral">
+                    <div class="containerServicos">
+                        <div class="cardGeral">
+                            
+                            <div class="card1Servicos">
+                                <i id="document" class="fa-regular fa-file"></i>
+                                
+                                <h3 class="missao">Declaração de Imposto de Renda</h3>
+                                <p class="missao2">Declaração completa de IRPF com análise detalhada e máxima restituição.</p>
+                            </div>
+                            <div class="card2Servicos">
+                                <i id="calculator" class="fa-solid fa-calculator"></i>
+                                
+                                <h3 class="valores">Contabilidade para MEI</h3>
+                                <p class="valores2">Gestão completa da contabilidade do seu MEI, com emissão de notas e relatórios.</p>
+                            </div>
+                            <div class="card3Servicos">
+                                <i id="graphic" class="fa-solid fa-chart-line"></i>
+                                
+                                <h3 class="valores">Planejamento tributário</h3>
+                                <p class="valores2">Estratégias para reduzir sua carga tributária de forma legal e eficiente.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <br><br><br><br><br><br><br><br>
-                
-                <div class="entreContato">
-                    <div class="entreContato1">
-                        <p class="entreContatop">Não encontrou o serviço que procura? Entre em contato conosco!</p>
+                <div class="containerServicosCentral2">
+                    <div class="containerServicos2">
+                        <div class="cardGeral2">
+                            <div class="card1Servicos1">
+                                <i id="people" class="fa-solid fa-user-group"></i>
+                                
+                                <h3 class="missao">Abertura de empresa</h3>
+                                <p class="missao2">Assessoria completa para formalização do seu MEI ou empresa individual.</p>
+                            </div>
+                            <div class="card2Servicos2">
+                                <i id="check" class="fa-solid fa-circle-check"></i>
+                                
+                                <h3 class="valores">Regularização Fiscal</h3>
+                            <p class="valores2">Correção de pendências e regularização de débitos com a Receita Federal.</p>
+                        </div>
+                        <div class="card3Servicos3">
+                            <i id="dollar" class="fa-solid fa-dollar-sign"></i>
+                            
+                            <h3 class="valores">Consultoria Financeira</h3>
+                            <p class="valores2">Orientação para melhor gestão financeira e tomada de decisões estratégicas.</p>
+                        </div>
                     </div>
-                    <div class="entreContato2">
-                        <a class="entreContatoa" href="#contato">Fale com um especialista.</a>
+                </div>
+
+            </div>
+        </div>
+                <br><br><br>
+                <div class="entreContatoGeral">
+
+                    <div class="entreContato">
+                        <div class="entreContato1">
+                            <p class="entreContatop">Não encontrou o serviço que procura? Entre em contato conosco!</p>
+                        </div>
+                        <div class="entreContato2">
+                            <a class="entreContatoa" href="#contato">Fale com um especialista.</a>
+                        </div>
                     </div>
                 </div>
     
@@ -165,7 +233,7 @@
     </div>
   </div>
 </form>
-
+    
             <div class="cardsDaDireita">
                 <div class="cardDireita">
                     <h2>Informações de Contato</h2>
@@ -173,14 +241,14 @@
                         <i id="telephone" class="fa-solid fa-phone"></i>
                         <div class="titulos">
                             <h2>Telefone</h2>
-                            <p>(35) 98451-8736</p>
+                            <p>(35) 98443-1748</p>
                         </div>
                     </div>
                     <div class="subDireita">
                         <i id="telephone" class="fa-solid fa-envelope"></i>
                         <div class="titulos">
                             <h2>E-mail</h2>
-                            <p>leonardo.soares3345@gmail.com</p>
+                            <p>camilaribeiro183@gmail.com</p>
                         </div>
                     </div>
                     <div class="subDireita">
@@ -194,18 +262,19 @@
                 </div>
                 <div class="cardDireitaBaixo">
                     <div class="subDireita">
-                        <i id="telephone3" class="fa-solid fa-comment"></i>
+                        <i id="telephone3" class="fa-solid fa-dollar-sign"></i>
                         <div class="titulos2">
-                            <h2><strong>Atendimento rápido.</strong></h2>
-                            <p>Fale agora conosco pelo WhatsApp.</p>
+                            <h2><strong>Conheça nossos Planos.</strong></h2>
+                            <p>Veja os nossos planos e preços.</p>
                         </div>
                     </div>
                     <div class="zap2">
-                        <i id="zapzap2" class="fa-solid fa-paper-plane"></i><a id="linkZap2" href="https://wa.me/5535984518736?text=Olá, quero saber melhor sobre a CR Contabilidade." target="_blank">Iniciar conversa.</a>
+                        <i id="zapzap2" class="fa-solid fa-paper-plane"></i><a id="linkZap2" href="valores/valores.html">Ver Valores</a>
                     </div>                   
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 <footer id="solicitar">
@@ -224,19 +293,19 @@
         </div>
         <div class="contatos">
             <li id="contabilidade2">Contatos</li>
-            <div class="subDireita">
+            <div class="subDireita2">
                         <i id="telephone2" class="fa-solid fa-phone"></i>
                         <div class="titulos3">
-                            <p>Telefone: (35) 98451-8736</p>
+                            <p>Telefone: (35) 98443-1748</p>
                         </div>
                     </div>
-                    <div class="subDireita">
+                    <div class="subDireita2">
                         <i id="telephone2" class="fa-solid fa-envelope"></i>
                         <div class="titulos3">
-                            <p>E-mail: leonardo.soares3345@gmail.com</p>
+                            <p>E-mail: camilaribeiro183@gmail.com</p>
                         </div>
                     </div>
-                    <div class="subDireita">
+                    <div class="subDireita2">
                         <i id="telephone2" class="fa-solid fa-location-dot"></i>
                         <div class="titulos3">
                             <p>Atendimento: 100% online - Atendemos todo o Brasil.</p>
@@ -246,7 +315,7 @@
         <div class="redesSociais">
             <li id="contabilidade2">Redes Sociais</li>
             <div>
-                <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/camila-ribeiro-45aaa7172/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
             <a href=https://www.instagram.com/cr_contabilidade183/ target="_blank" rel="noopener noreferrer" class="instagram-icon"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
             <p>Siga-nos para dicas e novidades sobre contabilidade!</p>
@@ -256,7 +325,7 @@
         <p>© 2026 CR Contabilidade. Todos os direitos reservados.</p>
     </div>
     <div class="direitosReservados2">
-        <p>CNPJ: 00.000.000/0001-00 | CRC: SP-000000/O-0</p>
+        <p>CRC SP ATIVO</p>
     </div>
 </footer>
 </body>

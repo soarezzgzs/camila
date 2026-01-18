@@ -4,42 +4,45 @@
   margin: 0;
 }
 
+:root {
+  --cor-destaque: #7b685c;
+  --cor-fundo1: #f5f5f5;
+  --cor-fundo2: #fffafa;
+}
+
 a {
   text-decoration: none;
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: "Roboto" bold;
+  font-family: "Calibri" bold;
+  overflow-x: hidden;
 }
 
 header {
   border-bottom: 1px solid #1f29373a;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 4rem;
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: var(--cor-fundo1);
   font-family: "Roboto" bold;
   z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-  font-family: "Roboto" bold;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
   display: inline-block;
   align-items: center;
-  font-style: "Roboto" bold;
-  width: 100%;
-  background-color: white;
+  width: 100rem;
   z-index: 10000;
-  margin-right: 100px;
-  margin-left: 100px;
+  max-width: 100rem;
 }
 
 li {
@@ -52,10 +55,8 @@ li {
 #cr {
   border-radius: 6px;
   padding: 3px;
-  width: fit-content;
-  height: fit-content;
   color: white;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   cursor: auto;
   font-style: bold;
   z-index: 10000;
@@ -73,17 +74,16 @@ li {
 #parteDireita {
   color: #1f2937;
   font-size: 12pt;
-  margin-right: 20px;
   cursor: normal;
   z-index: 10000;
 }
 
 #parteDireita:hover {
-  color: #7c2d37;
+  color: var(--cor-destaque);
 }
 
 #orcamento {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   border-radius: 20px;
   padding: 8px;
@@ -93,15 +93,16 @@ li {
 }
 
 #orcamento:hover {
-  background-color: rgba(124, 45, 55, 0.8);
+  background-color: #50423a;
   z-index: 10000;
 }
 
 .divSuprema {
-  width: 100%;
+  width: 100rem;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50rem;
 }
 
 ul {
@@ -110,24 +111,24 @@ ul {
 }
 
 #home {
-  height: 80vh;
+  height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo2);
 }
 
 #servicos {
-  height: 100vh;
+  height: 100rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo2);
 }
 
 #contato {
-  height: 100vh;
+  height: 70rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,10 +146,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo2);
   height: 500px;
   margin-left: 100px;
   margin-right: 100px;
+  width: 91.7rem;
 }
 
 .home2h1 {
@@ -156,6 +158,7 @@ ul {
   font-size: 55pt;
   color: #1f2937;
   margin-bottom: 50px;
+  font-family: "Calibri" bold !important;
 }
 
 .home2p {
@@ -169,18 +172,18 @@ ul {
 }
 
 .imagem {
-  width: 1000px;
+  width: 100rem;
   height: 500px;
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
   justify-content: end;
-  margin-right: 60px;
+  margin-left: 5rem;
 }
 
 .faleConosco {
   margin-left: 50px;
   height: 10px;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   border-radius: 30px;
   padding: 15px 30px;
@@ -188,14 +191,14 @@ ul {
 }
 
 .faleConosco:hover {
-  background-color: rgba(124, 45, 55, 0.8);
+  background-color: #50423a;
 }
 
 .conhecaServicos {
   margin-left: 5px;
   height: 10px;
-  border: 1px solid #7c2d37;
-  color: #7c2d37;
+  border: 1px solid var(--cor-destaque);
+  color: var(--cor-destaque);
   border-radius: 30px;
   padding: 15px 30px;
   width: 60px;
@@ -203,209 +206,144 @@ ul {
 
 .conhecaServicos:hover {
   background-color: #f9fafb;
-  color: rgba(124, 45, 55, 0.8);
+  color: #50423a;
 }
 
+/* ===== Seção Sobre ===== */
 #sobre {
-  display: inline-block;
-  align-items: normal;
-  width: 90%;
-  height: 130vh;
-  margin-left: 100px;
-  margin-right: 100px;
+  scroll-margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 80rem;
+}
+
+.sobreh1,
+.sobrep1,
+.sobrep2,
+.sobrep3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
 }
 
 .sobreh1 {
-  width: 100%;
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #1f2937;
   font-size: 40pt;
+  margin-top: 70px;
 }
 
-.sobrep1 {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  color: #6b7280;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15pt;
-}
-
-.sobrep2 {
-  margin-bottom: 5px;
-  color: #6b7280;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15pt;
-}
-
+.sobrep1,
+.sobrep2,
 .sobrep3 {
-  margin-left: 5px;
-  margin-bottom: 5px;
   color: #6b7280;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 15pt;
+  margin: 5px 10px;
 }
 
 .experiencia {
-  display: flex;
-  margin-top: 100px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 150px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: start;
+  width: 100%;
 }
 
 .experiencia2 {
-  display: inline-block;
-  width: fit-content;
-  margin-right: 110px;
+  display: block;
+  max-width: 700px;
+  margin: 0;
 }
 
 .experiencia h2 {
-  margin-left: 50px;
-  width: 500px;
-  margin-bottom: 15px;
   color: #1f2937;
   font-size: 20pt;
-  margin-left: 200px;
+  margin: 0 0 15px 3rem;
 }
 
 .experiencia p {
-  width: 700px;
-  margin-left: 50px;
-  margin-bottom: 15px;
   color: #6b7280;
   font-size: 15pt;
-  margin-left: 200px;
+  margin: 0 0 15px 3rem;
 }
 
 .imgExperiencia {
-  width: 810px;
+  width: 50rem;
   height: 500px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
-  justify-content: end;
-  margin-right: 300px;
+  margin: 0;
 }
 
-.container2 {
+.sobreGeral {
+  width: 100rem;
+}
+
+.containerGeral {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Cards ===== */
+.container2 {
+  margin-top: 40px;
+  width: 100rem;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-}
-
-.card1 {
-  width: 450px;
-  height: 300px;
-  margin-left: 50px;
-  border-radius: 15px;
-  border: 1px solid #1f29373a;
-  margin-bottom: 100px;
-}
-
-#target {
-  width: 40px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  height: 40px;
-  margin-left: 30px;
-  background-color: rgba(124, 45, 55, 0.1);
-  border-radius: 50%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  color: #7c2d37;
-  font-size: 15pt;
-}
-
-.missao {
-  margin-left: 30px;
   align-items: center;
-  margin-bottom: 20px;
+  gap: 5rem;
+  width: 100rem;
 }
 
-.missao2 {
-  margin-left: 30px;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.card1:hover {
-  transition: 0.5s ease;
-  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
-}
-
-.card2 {
-  width: 450px;
-  height: 300px;
-  border-radius: 15px;
-  border: 1px solid #1f29373a;
-  margin-bottom: 100px;
-}
-
-#heart {
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  margin-left: 30px;
-  background-color: rgba(124, 45, 55, 0.1);
-  border-radius: 50%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  color: #7c2d37;
-  font-size: 15pt;
-}
-
-.card2:hover {
-  transition: 0.5s ease;
-  box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
-}
-
+.card1,
+.card2,
 .card3 {
-  width: 450px;
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  margin-top: 1rem;
+  padding-bottom: 10px;
+  width: 450px;
 }
 
+/* Ícones dos cards */
+#target,
+#heart,
 #award {
   width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
   margin-left: 30px;
-  background-color: rgba(124, 45, 55, 0.1);
-  border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  background-color: rgba(124, 45, 55, 0.1);
+  border-radius: 50%;
+  color: var(--cor-destaque);
   font-size: 15pt;
 }
 
+/* Textos dentro dos cards */
+.missao,
+.missao2,
+.valores,
+.valores2 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.card1:hover,
+.card2:hover,
 .card3:hover {
   transition: 0.5s ease;
   box-shadow: 5px 5px 5px rgba(107, 114, 128, 0.4);
@@ -415,7 +353,7 @@ ul {
   display: inline-block;
   align-items: normal;
   width: 100%;
-  height: 110vh;
+  height: 60rem;
 }
 
 .servicosh1 {
@@ -430,9 +368,7 @@ ul {
 }
 
 .servicosp {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 2rem;
   margin-top: 5px;
   color: #6b7280;
   width: 100%;
@@ -441,23 +377,40 @@ ul {
   align-items: center;
 }
 
+.containerServicosCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divRei {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .containerServicos {
   /* aaa */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  width: 100%;
-  height: 280px;
+}
+
+.cardGeral {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95rem;
 }
 
 .card1Servicos {
   width: 450px;
   height: 300px;
-  margin-left: 150px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+  margin-bottom: 1rem;
 }
 
 #document {
@@ -471,7 +424,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
 }
 
@@ -494,7 +447,7 @@ ul {
 }
 
 .card1Servicos:hover #document {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -505,6 +458,7 @@ ul {
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+  margin-bottom: 1rem;
 }
 
 #calculator {
@@ -519,7 +473,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
 }
 
@@ -530,7 +484,7 @@ ul {
 }
 
 .card2Servicos:hover #calculator {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -538,10 +492,11 @@ ul {
 .card3Servicos {
   width: 450px;
   height: 300px;
-  margin-right: 90px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+  margin-right: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 #graphic {
@@ -555,7 +510,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -567,25 +522,35 @@ ul {
 }
 
 .card3Servicos:hover #graphic {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
+}
+
+.cardGeral2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95rem;
+}
+
+.containerServicosCentral2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerServicos2 {
   /* aaa */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 280px;
 }
 
 .card1Servicos1 {
   width: 450px;
   height: 300px;
-  margin-left: 150px;
-  margin-top: 100px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
@@ -602,7 +567,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -628,7 +593,7 @@ ul {
 }
 
 .card1Servicos1:hover #people {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -636,8 +601,6 @@ ul {
 .card2Servicos2 {
   width: 450px;
   height: 300px;
-  margin-top: 100px;
-  margin-left: 20px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
@@ -654,7 +617,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -666,7 +629,7 @@ ul {
 }
 
 .card2Servicos2:hover #check {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
 }
@@ -674,12 +637,10 @@ ul {
 .card3Servicos3 {
   width: 450px;
   height: 300px;
-  margin-top: 100px;
-  margin-left: 20px;
-  margin-right: 90px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+  margin-right: 1.2rem;
 }
 
 #dollar {
@@ -693,7 +654,7 @@ ul {
   border-radius: 50%;
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   font-size: 15pt;
   margin-right: 30px;
 }
@@ -719,16 +680,22 @@ ul {
 }
 
 .card3Servicos3:hover #dollar {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   color: white;
   transition: 0.5s ease;
+}
+
+.entreContatoGeral {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .entreContato {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  margin-left: 80vh;
   height: 100px;
 }
 
@@ -745,7 +712,7 @@ ul {
 }
 
 .entreContatoa {
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   display: flex;
   justify-content: center;
   color: white;
@@ -757,6 +724,7 @@ ul {
 .contatoGeral {
   height: 100%;
   width: 100%;
+  text-align: center;
 }
 
 .contato1 {
@@ -839,13 +807,13 @@ ul {
 
 .zapzap {
   margin-top: 20px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 30px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   width: 440px;
   margin-left: 30px;
   cursor: pointer;
@@ -863,7 +831,7 @@ ul {
 #linkZap {
   color: white;
   margin-left: 20px;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   border: none;
 }
 
@@ -881,7 +849,7 @@ ul {
 
 #telephone {
   margin-top: 20px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   background-color: rgba(124, 45, 55, 0.1);
   border-radius: 50%;
   height: 50px;
@@ -895,6 +863,17 @@ ul {
 }
 
 .subDireita {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+}
+
+.subDireita h2 {
+  text-align: left;
+}
+
+.subDireita2 {
   display: flex;
   align-items: center;
   position: relative;
@@ -920,7 +899,7 @@ ul {
 
 #telephone2 {
   margin-top: 20px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   background-color: rgba(124, 45, 55, 0.1);
   border-radius: 50%;
   height: 30px;
@@ -937,13 +916,15 @@ ul {
   width: 600px;
   height: 250px;
   border-radius: 15px;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   box-shadow: 10px 10px 10px rgba(228, 234, 247, 0.5);
-  padding: 20px;
+  padding: 15px;
 }
 
 .cardsDaDireita {
   margin-left: 50px;
+  margin-right: 3rem;
+  margin-bottom: 5rem;
 }
 
 .zap2 {
@@ -956,15 +937,17 @@ ul {
   width: 500px;
   margin-left: 30px;
   background-color: white;
-  color: #7c2d37;
+  color: var(--cor-destaque);
+  cursor: pointer;
 }
 
 #linkZap2 {
   width: 120px;
-  color: #7c2d37;
+  color: var(--cor-destaque);
   margin-left: 20px;
   display: flex;
   justify-content: center;
+  font-size: 15pt;
 }
 
 #zapzap2 {
@@ -998,7 +981,7 @@ ul {
   width: fit-content;
   height: fit-content;
   color: white;
-  background-color: #7c2d37;
+  background-color: var(--cor-destaque);
   cursor: auto;
   font-style: bold;
   z-index: 10000;
@@ -1016,7 +999,7 @@ ul {
 }
 
 .esquerda2 p {
-  color: rgb(101, 110, 126);
+  color: white;
 }
 
 .linksRapidos {
@@ -1060,7 +1043,7 @@ ul {
 }
 
 .redesSociais p {
-  color: #6b7280;
+  color: white;
 }
 
 .direitosReservados {
@@ -1081,7 +1064,7 @@ ul {
 #telephone3 {
   margin-top: 20px;
   color: white;
-  background-color: rgba(218, 179, 184, 0.1);
+  background-color: rgba(199, 152, 158, 0.1);
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -1091,4 +1074,397 @@ ul {
   position: relative;
   top: -10px;
   z-index: 1000;
+  margin-left: 1.2rem;
+  font-size: 15pt;
+}
+
+/* ======= MEDIA MOBILE ======== */
+
+@media (max-width: 768px) {
+  /* ===== RESET MOBILE ===== */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  section {
+    height: auto !important;
+    padding: 40px 16px;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    position: fixed;
+    height: auto;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .direita {
+    display: none;
+  }
+
+  .divSuprema {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .esquerda {
+    margin: 0;
+    text-align: center;
+  }
+
+  /* ===== HOME ===== */
+  #home {
+    padding-top: 180px;
+  }
+
+  .home {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home2h1 {
+    font-size: clamp(26px, 7vw, 34px);
+    line-height: 1.2;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  .home2p {
+    font-size: 14px;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .imagem {
+    margin: 20px 0 0;
+    width: 100%;
+  }
+
+  .faleConosco,
+  .conhecaServicos {
+    width: 100%;
+    max-width: 280px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ===== SOBRE ===== */
+  #sobre {
+    padding-top: 60px;
+  }
+
+  .sobreh1 {
+    font-size: clamp(26px, 6vw, 32px);
+    margin: 2rem 0 16px;
+    text-align: center;
+  }
+
+  .sobre p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .experiencia h2,
+  .experiencia p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .imgExperiencia {
+    width: 100%;
+    margin: 0;
+    height: 20rem;
+  }
+
+  /* ===== CARDS (SOBRE + SERVIÇOS + CONTATO) ===== */
+
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card1Servicos,
+  .card2Servicos,
+  .card3Servicos,
+  .card1Servicos1,
+  .card2Servicos2,
+  .card3Servicos3,
+  .cardEsquerda {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0;
+  }
+  .cardDireita,
+  .cardDireitaBaixo {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* ===== CONTATO ===== */
+  #contato {
+    padding-bottom: 80px;
+  }
+
+  .cardsDaDireita {
+    margin: 0;
+  }
+
+  #inputNome,
+  #inputEmail,
+  #inputMensagem {
+    width: 15rem;
+  }
+
+  .zapzap,
+  .zap2 {
+    width: 14rem;
+  }
+
+  /* ===== FOOTER ===== */
+  #solicitar {
+    padding: 40px 16px;
+    height: auto;
+  }
+
+  .centralizar {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+}
+
+/* ======= MEDIA NOTEBOOK PEQUENO OU TABLET ============ */
+
+@media (min-width: 769px) and (max-width: 1439px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ===== RESET DE LARGURAS FIXAS ===== */
+  nav,
+  .divSuprema,
+  .home,
+  .sobreGeral,
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
+  .cards,
+  .centralizar {
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* ===== NAVBAR ===== */
+  header {
+    height: auto;
+    padding: 14px 0;
+  }
+
+  nav {
+    width: 100% !important;
+  }
+
+  .divSuprema {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .esquerda {
+    margin: 0 !important;
+    white-space: nowrap;
+  }
+
+  .direita {
+    display: flex;
+    gap: 18px;
+    margin: 0 !important;
+  }
+
+  /* ===== HOME ===== */
+  #home {
+    padding-top: 120px;
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .home2 {
+    width: 55%;
+  }
+
+  .home2h1 {
+    font-size: clamp(30px, 3.2vw, 42px);
+    line-height: 1.2;
+  }
+
+  .home2p {
+    font-size: 15px;
+  }
+
+  .home2 a {
+    display: inline-flex;
+    margin-right: 14px;
+  }
+
+  .faleConosco {
+    width: fit-content;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  .conhecaServicos {
+    width: 14rem;
+    align-items: center;
+  }
+
+  .imagem {
+    width: 65%;
+    margin: 0 !important;
+  }
+
+  /* ===== SOBRE ===== */
+  .experiencia {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .imgExperiencia {
+    width: 65%;
+    margin: 0 !important;
+  }
+
+  /* ===== CARDS ===== */
+  .container,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2 {
+    display: flex;
+    justify-content: center !important;
+    gap: 32px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card1Servicos,
+  .card2Servicos,
+  .card3Servicos,
+  .card1Servicos1,
+  .card2Servicos2,
+  .card3Servicos3 {
+    width: 300px;
+    margin: 0;
+  }
+
+  .card1Servicos,
+  .card2Servicos,
+  .card3Servicos,
+  .card1Servicos1,
+  .card2Servicos2,
+  .card3Servicos3 {
+    margin-bottom: 2rem;
+  }
+
+  /* ===== CONTATO ===== */
+  .cards {
+    display: flex;
+    gap: 32px;
+  }
+
+  .cardEsquerda,
+  .cardDireita,
+  .cardDireitaBaixo {
+    width: 80%;
+    margin: 0;
+  }
+
+  .cardEsquerda {
+    margin-left: 10rem;
+  }
+}
+
+/* =========== MEDIA DESKTOP GRANDE ========= */
+
+@media (min-width: 1440px) {
+  nav,
+  .divSuprema {
+    max-width: 1600px;
+    margin: 0 1rem 0 1rem !important;
+  }
+
+  .home,
+  .sobreGeral,
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
+  .cards,
+  .centralizar {
+    max-width: 1440px;
+    margin: 0 auto !important;
+  }
+
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2 {
+    justify-content: center;
+    gap: 48px;
+  }
 }
