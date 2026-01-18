@@ -231,7 +231,7 @@ ul {
 /* ====== ABA VALORES ========== */
 
 #valores {
-  height: 80rem;
+  height: 100rem;
   text-align: center;
 }
 
@@ -267,7 +267,7 @@ ul {
 }
 
 .tabelaEsquerda {
-  height: 60.5rem;
+  height: 80.5rem;
   width: 30rem;
   border: 1px solid gray;
   border-radius: 10px;
@@ -312,7 +312,7 @@ ul {
 }
 
 .tabelaDireita {
-  height: 60.5rem;
+  height: 80.5rem;
   width: 30rem;
   border: 1px solid gray;
   border-radius: 10px;
