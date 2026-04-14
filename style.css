@@ -23,7 +23,6 @@ html {
 header {
   border-bottom: 1px solid #1f29373a;
   height: 4rem;
-  width: 100%;
   position: fixed;
   background-color: var(--cor-fundo1);
   font-family: "Roboto" bold;
@@ -31,6 +30,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 body {
@@ -38,11 +38,12 @@ body {
 }
 
 nav {
-  display: inline-block;
+  display: flex;
   align-items: center;
-  width: 100rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   z-index: 10000;
-  max-width: 100rem;
 }
 
 li {
@@ -98,11 +99,20 @@ li {
 }
 
 .divSuprema {
-  width: 100rem;
-  display: inline-flex;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 50rem;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.divSuprema ul {
+  flex-shrink: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 ul {
@@ -148,9 +158,11 @@ ul {
   align-items: center;
   background-color: var(--cor-fundo2);
   height: 500px;
-  margin-left: 100px;
-  margin-right: 100px;
-  width: 91.7rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .home2h1 {
@@ -172,12 +184,14 @@ ul {
 }
 
 .imagem {
-  width: 100rem;
-  height: 500px;
-  border-radius: 10px;
+  width: clamp(300px, 80vw, 100rem);
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
   justify-content: end;
-  margin-left: 5rem;
+  margin-left: clamp(1rem, 5vw, 5rem);
 }
 
 .faleConosco {
@@ -272,8 +286,9 @@ ul {
 }
 
 .imgExperiencia {
-  width: 50rem;
-  height: 500px;
+  width: clamp(300px, 80vw, 40rem);
+  height: auto;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
@@ -281,26 +296,46 @@ ul {
 }
 
 .sobreGeral {
-  width: 100rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
 }
 
 .containerGeral {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ===== Cards ===== */
-.container2 {
-  margin-top: 40px;
-  width: 100rem;
-}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  width: 100rem;
+  gap: clamp(1rem, 4vw, 5rem);
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto auto auto;
+}
+
+@media (min-width: 1100px) {
+  .container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+  
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .card1,
@@ -312,7 +347,7 @@ ul {
   margin-bottom: 60px;
   margin-top: 1rem;
   padding-bottom: 10px;
-  width: 450px;
+  width: 390px;
 }
 
 /* Ícones dos cards */
@@ -377,40 +412,23 @@ ul {
   align-items: center;
 }
 
-.containerServicosCentral {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.divRei {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .containerServicos {
   /* aaa */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
 }
 
-.cardGeral {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 95rem;
-}
 
 .card1Servicos {
-  width: 450px;
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 #document {
@@ -453,12 +471,11 @@ ul {
 }
 
 .card2Servicos {
-  width: 450px;
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 #calculator {
@@ -490,13 +507,11 @@ ul {
 }
 
 .card3Servicos {
-  width: 450px;
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
-  margin-right: 1.2rem;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 #graphic {
@@ -527,29 +542,8 @@ ul {
   transition: 0.5s ease;
 }
 
-.cardGeral2 {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 95rem;
-}
-
-.containerServicosCentral2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.containerServicos2 {
-  /* aaa */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .card1Servicos1 {
-  width: 450px;
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
@@ -599,7 +593,6 @@ ul {
 }
 
 .card2Servicos2 {
-  width: 450px;
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
@@ -635,12 +628,10 @@ ul {
 }
 
 .card3Servicos3 {
-  width: 450px;
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
-  margin-right: 1.2rem;
 }
 
 #dollar {
@@ -693,7 +684,8 @@ ul {
 }
 
 .entreContato {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;
@@ -701,14 +693,13 @@ ul {
 
 .entreContatop {
   margin-bottom: 20px;
-  display: flex;
   color: #6b7280;
   font-size: 12pt;
+  text-align: center;
 }
 
 .entreContato2 {
   width: 300px;
-  margin-left: 60px;
 }
 
 .entreContatoa {
@@ -719,6 +710,7 @@ ul {
   border-radius: 20px;
   padding: 8px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .contatoGeral {
@@ -772,7 +764,7 @@ ul {
 }
 
 #labelNome {
-  margin-left: 30px;
+  margin-left: clamp(10px, 3vw, 30px);
   margin-bottom: 10px;
   color: #1f2937;
   display: flex;
@@ -782,27 +774,31 @@ ul {
 
 #inputNome,
 #inputEmail {
-  margin-left: 30px;
+  margin-left: clamp(10px, 3vw, 30px);
   border-radius: 10px;
   height: 40px;
   padding: 10px;
-  width: 440px;
+  width: clamp(280px, 85vw, 440px);
+  max-width: 100%;
   margin-bottom: 10px;
   display: flex;
   align-items: start;
   justify-content: start;
+  box-sizing: border-box;
 }
 
 #inputMensagem {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: clamp(10px, 3vw, 30px);
+  margin-right: clamp(10px, 3vw, 30px);
   border-radius: 10px;
   height: 120px;
   padding: 10px;
-  width: 440px;
+  width: clamp(280px, 85vw, 440px);
+  max-width: 100%;
   display: flex;
   align-items: start;
   justify-content: start;
+  box-sizing: border-box;
 }
 
 .zapzap {
@@ -814,8 +810,9 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: var(--cor-destaque);
-  width: 440px;
-  margin-left: 30px;
+  width: clamp(280px, 85vw, 440px);
+  max-width: 100%;
+  margin-left: clamp(10px, 3vw, 30px);
   cursor: pointer;
 }
 
@@ -838,13 +835,14 @@ ul {
 .cardDireita {
   border: 1px solid #6b7280;
   box-shadow: 10px 10px 10px rgba(228, 234, 247, 0.5);
-
-  width: 600px;
-  height: 300px;
+  width: clamp(320px, 90vw, 600px);
+  max-width: 100%;
+  height: auto;
+  min-height: 300px;
   margin-bottom: 30px;
   border-radius: 15px;
   margin-top: 80px;
-  padding: 40px 30px;
+  padding: clamp(20px, 5vw, 40px) clamp(15px, 4vw, 30px);
 }
 
 #telephone {
@@ -897,7 +895,7 @@ ul {
   font-size: 15pt;
 }
 
-#telephone2 {
+#telephone2{
   margin-top: 20px;
   color: var(--cor-destaque);
   background-color: rgba(124, 45, 55, 0.1);
@@ -911,18 +909,27 @@ ul {
   top: -10px;
   z-index: 1000;
 }
+#telephone3 {
+  background-color: rgba(124, 45, 55, 0.1);
+  color: var(--cor-fundo1);
+
+}
 
 .cardDireitaBaixo {
-  width: 600px;
-  height: 250px;
+  width: clamp(320px, 90vw, 570px);
+  max-width: 100%;
+  height: auto;
+  min-height: 250px;
   border-radius: 15px;
   background-color: var(--cor-destaque);
   box-shadow: 10px 10px 10px rgba(228, 234, 247, 0.5);
-  padding: 15px;
+  padding: clamp(10px, 3vw, 15px);
 }
 
 .cardsDaDireita {
-  margin-left: 50px;
+  width: clamp(320px, 90vw, 570px);
+
+  margin-left: 30px;
   margin-right: 3rem;
   margin-bottom: 5rem;
 }
@@ -962,16 +969,23 @@ ul {
   background-color: #111827;
 }
 
+/* ========= FOOTER ======= */
+#solicitar {
+  width: 100%;
+  height: 500px;
+  background-color: #111827;
+}
+
 .centralizar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   border-bottom: 1px solid #1f2937;
 }
 
 .esquerda2 {
-  padding: 30px;
+  padding: 30px 0 30px 30px;
   width: 390px;
 }
 
@@ -996,6 +1010,7 @@ ul {
   font-size: 18pt;
   margin-bottom: 10px;
   color: white;
+  padding: 0;
 }
 
 .esquerda2 p {
@@ -1006,7 +1021,7 @@ ul {
   display: block;
   width: fit-content;
   margin-bottom: 10px;
-  padding: 30px;
+  margin-right: 30px;
   margin-top: 93px;
 }
 
@@ -1060,23 +1075,40 @@ ul {
   align-items: center;
   color: #6b7280;
 }
-
-#telephone3 {
+#telephone2 {
   margin-top: 20px;
-  color: white;
-  background-color: rgba(199, 152, 158, 0.1);
+  color: var(--cor-destaque);
+  background-color: rgba(124, 45, 55, 0.1);
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: -10px;
   z-index: 1000;
-  margin-left: 1.2rem;
-  font-size: 15pt;
 }
+
+.subDireita {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+
+}
+
 
 /* ======= MEDIA MOBILE ======== */
 
@@ -1085,6 +1117,10 @@ ul {
   html,
   body {
     overflow-x: hidden;
+  }
+
+  .desktop-only {
+    display: none;
   }
 
   * {
@@ -1202,7 +1238,7 @@ ul {
 
   /* ===== CARDS (SOBRE + SERVIÇOS + CONTATO) ===== */
 
-  .container,
+.container,
   .container2,
   .containerServicos,
   .containerServicos2,
@@ -1214,6 +1250,19 @@ ul {
     align-items: center;
     width: 100%;
     gap: 20px;
+  }
+
+  .cardDireita,
+  .cardDireitaBaixo {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .titulos {
+    text-align: left;
   }
 
   .card1,
@@ -1230,6 +1279,9 @@ ul {
     max-width: 360px;
     height: auto;
     margin: 0;
+  }
+  .zapzap {
+    margin-bottom: 10px;
   }
   .cardDireita,
   .cardDireitaBaixo {
@@ -1257,7 +1309,8 @@ ul {
 
   .zapzap,
   .zap2 {
-    width: 14rem;
+    width: 15rem;
+    margin: 20px auto 0;
   }
 
   /* ===== FOOTER ===== */
@@ -1271,200 +1324,31 @@ ul {
     text-align: center;
     gap: 24px;
   }
-}
 
-/* ======= MEDIA NOTEBOOK PEQUENO OU TABLET ============ */
-
-@media (min-width: 769px) and (max-width: 1439px) {
-  html,
-  body {
-    overflow-x: hidden;
+  .desktop-only {
+    display: none;
   }
-
-  /* ===== RESET DE LARGURAS FIXAS ===== */
-  nav,
-  .divSuprema,
-  .home,
-  .sobreGeral,
-  .container,
-  .container2,
-  .containerServicos,
-  .containerServicos2,
-  .cardGeral,
-  .cardGeral2,
-  .cards,
-  .centralizar {
-    width: 100% !important;
-    max-width: 1200px;
-    margin: 0 auto !important;
-    padding-left: 24px;
-    padding-right: 24px;
+  .mobile-only {
+    display: block;
   }
-
-  /* ===== NAVBAR ===== */
-  header {
-    height: auto;
-    padding: 14px 0;
-  }
-
-  nav {
-    width: 100% !important;
-  }
-
-  .divSuprema {
+  .mobile-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
-  .esquerda {
-    margin: 0 !important;
-    white-space: nowrap;
-  }
-
-  .direita {
-    display: flex;
-    gap: 18px;
-    margin: 0 !important;
-  }
-
-  /* ===== HOME ===== */
-  #home {
-    padding-top: 120px;
-  }
-
-  .home {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .home2 {
-    width: 55%;
-  }
-
-  .home2h1 {
-    font-size: clamp(30px, 3.2vw, 42px);
-    line-height: 1.2;
-  }
-
-  .home2p {
-    font-size: 15px;
-  }
-
-  .home2 a {
-    display: inline-flex;
-    margin-right: 14px;
-  }
-
-  .faleConosco {
-    width: fit-content;
-    margin-bottom: 1rem;
-    align-items: center;
-  }
-
-  .conhecaServicos {
-    width: 14rem;
-    align-items: center;
-  }
-
-  .imagem {
-    width: 65%;
-    margin: 0 !important;
-  }
-
-  /* ===== SOBRE ===== */
-  .experiencia {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .imgExperiencia {
-    width: 65%;
-    margin: 0 !important;
-  }
-
-  /* ===== CARDS ===== */
-  .container,
-  .containerServicos,
-  .containerServicos2,
-  .cardGeral,
-  .cardGeral2 {
-    display: flex;
-    justify-content: center !important;
-    gap: 32px;
-  }
-
-  .card1,
-  .card2,
-  .card3,
-  .card1Servicos,
-  .card2Servicos,
-  .card3Servicos,
-  .card1Servicos1,
-  .card2Servicos2,
-  .card3Servicos3 {
-    width: 300px;
-    margin: 0;
-  }
-
-  .card1Servicos,
-  .card2Servicos,
-  .card3Servicos,
-  .card1Servicos1,
-  .card2Servicos2,
-  .card3Servicos3 {
-    margin-bottom: 2rem;
-  }
-
-  /* ===== CONTATO ===== */
-  .cards {
-    display: flex;
-    gap: 32px;
-  }
-
-  .cardEsquerda,
-  .cardDireita,
-  .cardDireitaBaixo {
-    width: 80%;
-    margin: 0;
-  }
-
-  .cardEsquerda {
-    margin-left: 10rem;
-  }
-}
-
-/* =========== MEDIA DESKTOP GRANDE ========= */
-
-@media (min-width: 1440px) {
-  nav,
-  .divSuprema {
-    max-width: 1600px;
-    margin: 0 1rem 0 1rem !important;
-  }
-
-  .home,
-  .sobreGeral,
-  .container,
-  .container2,
-  .containerServicos,
-  .containerServicos2,
-  .cardGeral,
-  .cardGeral2,
-  .cards,
-  .centralizar {
-    max-width: 1440px;
-    margin: 0 auto !important;
-  }
-
-  .containerServicos,
-  .containerServicos2,
-  .cardGeral,
-  .cardGeral2 {
-    justify-content: center;
-    gap: 48px;
+  .mobile-menu {
+    display: none;
+    & ul {
+      & li {
+        padding: 10px;
+        border-bottom: 1px solid #1f29373a;
+        & a {
+          color: black;
+        }
+        & a:hover {
+          color: var(--cor-destaque);
+        }
+      }
+    }
   }
 }
