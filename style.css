@@ -23,6 +23,10 @@ html {
 header {
   border-bottom: 1px solid #1f29373a;
   height: 4rem;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   position: fixed;
   background-color: var(--cor-fundo1);
   font-family: "Roboto" bold;
@@ -30,7 +34,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   width: 100%;
+=======
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 body {
@@ -40,10 +47,16 @@ body {
 nav {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   z-index: 10000;
+=======
+  width: 100rem;
+  z-index: 10000;
+  max-width: 100rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 li {
@@ -99,6 +112,7 @@ li {
 }
 
 .divSuprema {
+<<<<<<< HEAD
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -113,6 +127,13 @@ li {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+=======
+  width: 100rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 ul {
@@ -158,11 +179,17 @@ ul {
   align-items: center;
   background-color: var(--cor-fundo2);
   height: 500px;
+<<<<<<< HEAD
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
   box-sizing: border-box;
+=======
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 91.7rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .home2h1 {
@@ -184,6 +211,7 @@ ul {
 }
 
 .imagem {
+<<<<<<< HEAD
   width: clamp(300px, 80vw, 100rem);
   height: auto;
   max-height: 500px;
@@ -192,6 +220,14 @@ ul {
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
   justify-content: end;
   margin-left: clamp(1rem, 5vw, 5rem);
+=======
+  width: 100rem;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
+  justify-content: end;
+  margin-left: 5rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .faleConosco {
@@ -286,9 +322,14 @@ ul {
 }
 
 .imgExperiencia {
+<<<<<<< HEAD
   width: clamp(300px, 80vw, 40rem);
   height: auto;
   max-height: 500px;
+=======
+  width: 50rem;
+  height: 500px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 10px 20px 50px rgba(107, 114, 128, 0.2);
@@ -296,24 +337,39 @@ ul {
 }
 
 .sobreGeral {
+<<<<<<< HEAD
   max-width: 1200px;
   width: 100%;
   margin: auto;
+=======
+  width: 100rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .containerGeral {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* ===== Cards ===== */
+=======
+}
+
+/* ===== Cards ===== */
+.container2 {
+  margin-top: 40px;
+  width: 100rem;
+}
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   gap: clamp(1rem, 4vw, 5rem);
   flex-wrap: wrap;
   width: 100%;
@@ -336,6 +392,10 @@ ul {
     max-width: none;
     margin: 0;
   }
+=======
+  gap: 5rem;
+  width: 100rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .card1,
@@ -347,7 +407,11 @@ ul {
   margin-bottom: 60px;
   margin-top: 1rem;
   padding-bottom: 10px;
+<<<<<<< HEAD
   width: 390px;
+=======
+  width: 450px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 /* Ícones dos cards */
@@ -412,6 +476,7 @@ ul {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .containerServicos {
   /* aaa */
   display: grid;
@@ -424,11 +489,46 @@ ul {
 
 
 .card1Servicos {
+=======
+.containerServicosCentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divRei {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.containerServicos {
+  /* aaa */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardGeral {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95rem;
+}
+
+.card1Servicos {
+  width: 450px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+<<<<<<< HEAD
   margin: 0;
+=======
+  margin-bottom: 1rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 #document {
@@ -471,11 +571,19 @@ ul {
 }
 
 .card2Servicos {
+<<<<<<< HEAD
+=======
+  width: 450px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+<<<<<<< HEAD
   margin: 0;
+=======
+  margin-bottom: 1rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 #calculator {
@@ -507,11 +615,20 @@ ul {
 }
 
 .card3Servicos {
+<<<<<<< HEAD
+=======
+  width: 450px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+<<<<<<< HEAD
   margin: 0;
+=======
+  margin-right: 1.2rem;
+  margin-bottom: 1rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 #graphic {
@@ -542,8 +659,34 @@ ul {
   transition: 0.5s ease;
 }
 
+<<<<<<< HEAD
 
 .card1Servicos1 {
+=======
+.cardGeral2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95rem;
+}
+
+.containerServicosCentral2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerServicos2 {
+  /* aaa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1Servicos1 {
+  width: 450px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
@@ -593,6 +736,10 @@ ul {
 }
 
 .card2Servicos2 {
+<<<<<<< HEAD
+=======
+  width: 450px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
@@ -628,10 +775,18 @@ ul {
 }
 
 .card3Servicos3 {
+<<<<<<< HEAD
+=======
+  width: 450px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   height: 300px;
   border-radius: 15px;
   border: 1px solid #1f29373a;
   background-color: white;
+<<<<<<< HEAD
+=======
+  margin-right: 1.2rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 #dollar {
@@ -684,8 +839,12 @@ ul {
 }
 
 .entreContato {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+  display: inline-block;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   justify-content: center;
   align-items: center;
   height: 100px;
@@ -693,13 +852,23 @@ ul {
 
 .entreContatop {
   margin-bottom: 20px;
+<<<<<<< HEAD
   color: #6b7280;
   font-size: 12pt;
   text-align: center;
+=======
+  display: flex;
+  color: #6b7280;
+  font-size: 12pt;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .entreContato2 {
   width: 300px;
+<<<<<<< HEAD
+=======
+  margin-left: 60px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .entreContatoa {
@@ -710,7 +879,10 @@ ul {
   border-radius: 20px;
   padding: 8px;
   margin-top: 20px;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .contatoGeral {
@@ -764,7 +936,11 @@ ul {
 }
 
 #labelNome {
+<<<<<<< HEAD
   margin-left: clamp(10px, 3vw, 30px);
+=======
+  margin-left: 30px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   margin-bottom: 10px;
   color: #1f2937;
   display: flex;
@@ -774,16 +950,25 @@ ul {
 
 #inputNome,
 #inputEmail {
+<<<<<<< HEAD
   margin-left: clamp(10px, 3vw, 30px);
   border-radius: 10px;
   height: 40px;
   padding: 10px;
   width: clamp(280px, 85vw, 440px);
   max-width: 100%;
+=======
+  margin-left: 30px;
+  border-radius: 10px;
+  height: 40px;
+  padding: 10px;
+  width: 440px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   margin-bottom: 10px;
   display: flex;
   align-items: start;
   justify-content: start;
+<<<<<<< HEAD
   box-sizing: border-box;
 }
 
@@ -799,6 +984,20 @@ ul {
   align-items: start;
   justify-content: start;
   box-sizing: border-box;
+=======
+}
+
+#inputMensagem {
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+  height: 120px;
+  padding: 10px;
+  width: 440px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .zapzap {
@@ -810,9 +1009,14 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: var(--cor-destaque);
+<<<<<<< HEAD
   width: clamp(280px, 85vw, 440px);
   max-width: 100%;
   margin-left: clamp(10px, 3vw, 30px);
+=======
+  width: 440px;
+  margin-left: 30px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   cursor: pointer;
 }
 
@@ -835,6 +1039,7 @@ ul {
 .cardDireita {
   border: 1px solid #6b7280;
   box-shadow: 10px 10px 10px rgba(228, 234, 247, 0.5);
+<<<<<<< HEAD
   width: clamp(320px, 90vw, 600px);
   max-width: 100%;
   height: auto;
@@ -843,6 +1048,15 @@ ul {
   border-radius: 15px;
   margin-top: 80px;
   padding: clamp(20px, 5vw, 40px) clamp(15px, 4vw, 30px);
+=======
+
+  width: 600px;
+  height: 300px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  margin-top: 80px;
+  padding: 40px 30px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 #telephone {
@@ -895,7 +1109,11 @@ ul {
   font-size: 15pt;
 }
 
+<<<<<<< HEAD
 #telephone2{
+=======
+#telephone2 {
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   margin-top: 20px;
   color: var(--cor-destaque);
   background-color: rgba(124, 45, 55, 0.1);
@@ -909,6 +1127,7 @@ ul {
   top: -10px;
   z-index: 1000;
 }
+<<<<<<< HEAD
 #telephone3 {
   background-color: rgba(124, 45, 55, 0.1);
   color: var(--cor-fundo1);
@@ -930,6 +1149,20 @@ ul {
   width: clamp(320px, 90vw, 570px);
 
   margin-left: 30px;
+=======
+
+.cardDireitaBaixo {
+  width: 600px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: var(--cor-destaque);
+  box-shadow: 10px 10px 10px rgba(228, 234, 247, 0.5);
+  padding: 15px;
+}
+
+.cardsDaDireita {
+  margin-left: 50px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   margin-right: 3rem;
   margin-bottom: 5rem;
 }
@@ -969,6 +1202,7 @@ ul {
   background-color: #111827;
 }
 
+<<<<<<< HEAD
 /* ========= FOOTER ======= */
 #solicitar {
   width: 100%;
@@ -976,16 +1210,26 @@ ul {
   background-color: #111827;
 }
 
+=======
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 .centralizar {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   gap: 20px;
+=======
+  gap: 50px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   border-bottom: 1px solid #1f2937;
 }
 
 .esquerda2 {
+<<<<<<< HEAD
   padding: 30px 0 30px 30px;
+=======
+  padding: 30px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   width: 390px;
 }
 
@@ -1010,7 +1254,10 @@ ul {
   font-size: 18pt;
   margin-bottom: 10px;
   color: white;
+<<<<<<< HEAD
   padding: 0;
+=======
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 }
 
 .esquerda2 p {
@@ -1021,7 +1268,11 @@ ul {
   display: block;
   width: fit-content;
   margin-bottom: 10px;
+<<<<<<< HEAD
   margin-right: 30px;
+=======
+  padding: 30px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   margin-top: 93px;
 }
 
@@ -1075,6 +1326,7 @@ ul {
   align-items: center;
   color: #6b7280;
 }
+<<<<<<< HEAD
 #telephone2 {
   margin-top: 20px;
   color: var(--cor-destaque);
@@ -1082,12 +1334,23 @@ ul {
   border-radius: 50%;
   height: 30px;
   width: 30px;
+=======
+
+#telephone3 {
+  margin-top: 20px;
+  color: white;
+  background-color: rgba(199, 152, 158, 0.1);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: -10px;
   z-index: 1000;
+<<<<<<< HEAD
 }
 
 .subDireita {
@@ -1110,6 +1373,12 @@ ul {
 }
 
 
+=======
+  margin-left: 1.2rem;
+  font-size: 15pt;
+}
+
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
 /* ======= MEDIA MOBILE ======== */
 
 @media (max-width: 768px) {
@@ -1119,10 +1388,13 @@ ul {
     overflow-x: hidden;
   }
 
+<<<<<<< HEAD
   .desktop-only {
     display: none;
   }
 
+=======
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   * {
     box-sizing: border-box;
     max-width: 100%;
@@ -1238,7 +1510,11 @@ ul {
 
   /* ===== CARDS (SOBRE + SERVIÇOS + CONTATO) ===== */
 
+<<<<<<< HEAD
 .container,
+=======
+  .container,
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   .container2,
   .containerServicos,
   .containerServicos2,
@@ -1252,6 +1528,7 @@ ul {
     gap: 20px;
   }
 
+<<<<<<< HEAD
   .cardDireita,
   .cardDireitaBaixo {
     width: 100%;
@@ -1265,6 +1542,8 @@ ul {
     text-align: left;
   }
 
+=======
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   .card1,
   .card2,
   .card3,
@@ -1280,9 +1559,12 @@ ul {
     height: auto;
     margin: 0;
   }
+<<<<<<< HEAD
   .zapzap {
     margin-bottom: 10px;
   }
+=======
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   .cardDireita,
   .cardDireitaBaixo {
     width: 100%;
@@ -1309,8 +1591,12 @@ ul {
 
   .zapzap,
   .zap2 {
+<<<<<<< HEAD
     width: 15rem;
     margin: 20px auto 0;
+=======
+    width: 14rem;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   }
 
   /* ===== FOOTER ===== */
@@ -1324,6 +1610,7 @@ ul {
     text-align: center;
     gap: 24px;
   }
+<<<<<<< HEAD
 
   .desktop-only {
     display: none;
@@ -1332,10 +1619,54 @@ ul {
     display: block;
   }
   .mobile-header {
+=======
+}
+
+/* ======= MEDIA NOTEBOOK PEQUENO OU TABLET ============ */
+
+@media (min-width: 769px) and (max-width: 1439px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ===== RESET DE LARGURAS FIXAS ===== */
+  nav,
+  .divSuprema,
+  .home,
+  .sobreGeral,
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
+  .cards,
+  .centralizar {
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* ===== NAVBAR ===== */
+  header {
+    height: auto;
+    padding: 14px 0;
+  }
+
+  nav {
+    width: 100% !important;
+  }
+
+  .divSuprema {
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+<<<<<<< HEAD
   .mobile-menu {
     display: none;
     & ul {
@@ -1350,5 +1681,157 @@ ul {
         }
       }
     }
+=======
+
+  .esquerda {
+    margin: 0 !important;
+    white-space: nowrap;
+  }
+
+  .direita {
+    display: flex;
+    gap: 18px;
+    margin: 0 !important;
+  }
+
+  /* ===== HOME ===== */
+  #home {
+    padding-top: 120px;
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .home2 {
+    width: 55%;
+  }
+
+  .home2h1 {
+    font-size: clamp(30px, 3.2vw, 42px);
+    line-height: 1.2;
+  }
+
+  .home2p {
+    font-size: 15px;
+  }
+
+  .home2 a {
+    display: inline-flex;
+    margin-right: 14px;
+  }
+
+  .faleConosco {
+    width: fit-content;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  .conhecaServicos {
+    width: 14rem;
+    align-items: center;
+  }
+
+  .imagem {
+    width: 65%;
+    margin: 0 !important;
+  }
+
+  /* ===== SOBRE ===== */
+  .experiencia {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .imgExperiencia {
+    width: 65%;
+    margin: 0 !important;
+  }
+
+  /* ===== CARDS ===== */
+  .container,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2 {
+    display: flex;
+    justify-content: center !important;
+    gap: 32px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card1Servicos,
+  .card2Servicos,
+  .card3Servicos,
+  .card1Servicos1,
+  .card2Servicos2,
+  .card3Servicos3 {
+    width: 300px;
+    margin: 0;
+  }
+
+  .card1Servicos,
+  .card2Servicos,
+  .card3Servicos,
+  .card1Servicos1,
+  .card2Servicos2,
+  .card3Servicos3 {
+    margin-bottom: 2rem;
+  }
+
+  /* ===== CONTATO ===== */
+  .cards {
+    display: flex;
+    gap: 32px;
+  }
+
+  .cardEsquerda,
+  .cardDireita,
+  .cardDireitaBaixo {
+    width: 80%;
+    margin: 0;
+  }
+
+  .cardEsquerda {
+    margin-left: 10rem;
+  }
+}
+
+/* =========== MEDIA DESKTOP GRANDE ========= */
+
+@media (min-width: 1440px) {
+  nav,
+  .divSuprema {
+    max-width: 1600px;
+    margin: 0 1rem 0 1rem !important;
+  }
+
+  .home,
+  .sobreGeral,
+  .container,
+  .container2,
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2,
+  .cards,
+  .centralizar {
+    max-width: 1440px;
+    margin: 0 auto !important;
+  }
+
+  .containerServicos,
+  .containerServicos2,
+  .cardGeral,
+  .cardGeral2 {
+    justify-content: center;
+    gap: 48px;
+>>>>>>> 810c2de630bd405ee1ee8c055372b0662d87d630
   }
 }
