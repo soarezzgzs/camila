@@ -142,6 +142,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .esquerda {
@@ -709,7 +710,6 @@ ul {
   color: white;
   border-radius: 20px;
   padding: 8px;
-  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -755,7 +755,7 @@ ul {
   width: 500px;
   height: 500px;
   border-radius: 15px;
-  margin-left: 150px;
+  margin-left: 48px;
 }
 
 .cardEsquerda h2 {
@@ -1164,7 +1164,7 @@ ul {
 
   /* ===== HOME ===== */
   #home {
-    padding-top: 180px;
+    padding-top: 200px;
   }
 
   .home {
@@ -1257,9 +1257,15 @@ ul {
     width: 100%;
     max-width: 360px;
     height: auto;
-    margin: 0;
     margin-bottom: 2rem;
   }
+    .cardDireitaBaixo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      justify-content: center;
+    }
 
   .titulos {
     text-align: left;
@@ -1294,6 +1300,7 @@ ul {
 
   /* ===== CONTATO ===== */
   #contato {
+    margin-top: 10px;
     padding-bottom: 80px;
   }
 

@@ -14,8 +14,8 @@ document.getElementById("contatoForm").addEventListener("submit", function(e) {
   }
 
 
-  const numero = "5535984518736"; // seu número com DDD
-  const texto = `Olá, meu nome é ${nome}. Meu email é ${email}. Mensagem: ${mensagem}`;
+  const numero = "553584431748"; // seu número com DDD
+  const texto = `Olá, meu nome é ${nome} e vim pelo seu site! Meu email é ${email} e gostaria de tirar algumas dúvidas. Mensagem: ${mensagem}`;
   const link = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
   window.open(link, "_blank"); // abre o WhatsApp em nova aba
@@ -30,11 +30,3 @@ if (menuIcon && menuList) {
         menuList.classList.toggle('active');
     });
 }
-
-  const numero = "553584431748";
-  const texto = `Olá, meu nome é ${nome}. Meu email é ${email}. Mensagem: ${mensagem}`;
-  const link = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-
-  window.open(link, "_blank");
-
-
